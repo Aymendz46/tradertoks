@@ -1,6 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\VideosController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\CourseController;
+use App\Http\Controllers\PaymentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +19,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/course', [CourseController::class, 'index'])->name('course');
+Route::get('/videos', [VideosController::class, 'index'])->name('videos');
+Route::get('/about', [AboutController::class, 'index'])->name('about');
+Route::get('/contact-me', [ContactController::class, 'index'])->name('contact');
+Route::get('/purchase', [PaymentController::class, 'index'])->name('purchase');

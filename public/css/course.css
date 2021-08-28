@@ -1,0 +1,752 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+
+/*------------------
+    Scroll bar
+--------------------*/
+
+html {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #FBFBFB;
+}
+
+
+/*------------------
+    Scroll bar
+--------------------*/
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-left: 1px solid rgba(0, 0, 0, 0.068);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #504B4B;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+/*-----------------
+    Section Titles
+------------------*/
+
+.section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.section-title h1 {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #504B4B;
+    border-top: 3px solid #504B4B;
+    border-bottom: 3px solid #504B4B;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
+.section-title.light {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.section-title.light h1 {
+    color: #FBFBFB;
+    border-top: 3px solid #FBFBFB;
+    border-bottom: 3px solid #FBFBFB;
+}
+
+
+/*--------------------
+        Left dots
+--------------------*/
+
+.left-dots {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 30%;
+    left: 3%;
+    z-index: 2;
+}
+
+.dots {
+    display: inline-block;
+    height: 15px;
+    background: rgba(80, 75, 75, 0.45);
+    width: 15px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.dots.active {
+    background: #504B4B;
+}
+
+
+/*--------------------
+        Main
+--------------------*/
+
+.main h1 {
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: 0.135em;
+    color: #504B4B;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 10%;
+}
+
+.right {
+    position: relative;
+}
+
+.image-bottom {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80%;
+    z-index: -1;
+}
+
+.image-top {
+    padding-top: 30px;
+    padding-left: 30%;
+    width: 80%;
+}
+
+img {
+    display: block;
+}
+
+
+/*--------------------
+        Who
+--------------------*/
+
+.who {
+    margin: 0 10%;
+    padding: 4em 0 0 0;
+}
+
+.who p {
+    font-weight: 500;
+    font-size: 18px;
+    color: #797878;
+}
+
+/*--------------------
+        What
+--------------------*/
+
+.what .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.what .content img {
+    width: 100%;
+}
+
+.what .content .detail {
+    padding: 3rem 5rem;
+}
+
+.what .content .detail.dark {
+    padding-left: 20%;
+}
+
+.what .content .detail.light {
+    padding-right: 20%;
+}
+
+.what .content .detail h3 {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.what .content .detail p {
+    font-weight: normal;
+    font-size: 19px;
+}
+
+.what .content .detail .line {
+    display: block;
+    width: 80px;
+    height: 2px;
+    margin: 2rem;
+}
+
+.what .content .detail.dark {
+    background-color: #504B4B;
+    color: #D3D3D3;
+}
+
+.what .content .detail.dark .line {
+    background-color: #fbfbfb;
+}
+
+.what .content .detail.light {
+    background-color: #FBFBFB;
+}
+
+.what .content .detail.light .line {
+    background-color: #504B4B;
+}
+
+.what .image {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.what .image img {
+    width: 50%;
+    margin: auto;
+}
+
+
+/*--------------------
+        Review
+--------------------*/
+
+.review .band {
+    background: #504B4B;
+}
+
+.container {
+    display: flex;
+    padding-top: 3.75em;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card {
+    display: grid;
+    margin: 2em;
+    padding: 1em;
+    width: 320px;
+    height: 398px;
+}
+
+.container .card {
+    background: #FCFBFB;
+    color: #504B4B;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.container .card.active {
+    background: #504B4B;
+    color: #FCFBFB;
+    width: 340px;
+    height: 422px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.card .profile-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .client_id {
+    display: flex;
+    margin: 0.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .client_id p {
+    font-family: Rokkit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0.06em;
+    margin-right: 8px;
+}
+
+.card .review {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: normal;
+    font-size: 13px;
+    /* or 17px */
+    text-align: center;
+    letter-spacing: 0.06em;
+    padding: 0em 2em;
+}
+
+.card .rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .cta-div {
+    padding-bottom: 3.75em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.container h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    /* identical to box height */
+    color: #504B4B;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    padding-bottom: 0.5em;
+}
+
+.container .cta-btn {
+    width: 309px;
+    height: 74px;
+    background: #504B4B;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    letter-spacing: -0.01em;
+    border: none;
+    color: #FBFBFB;
+}
+
+
+/*--------------------
+        Connected
+--------------------*/
+
+.connected {
+    display: flex;
+    flex-direction: column;
+    background: #504B4B;
+    text-align: center;
+    padding: 2.5em 0em;
+}
+
+.connected h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    color: #FBFBFB;
+}
+
+.connected .line {
+    display: block;
+    width: 80px;
+    height: 2px;
+    margin: auto;
+    background-color: #FBFBFB;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.connected .social {
+    position: relative;
+    margin: auto;
+    padding: 7rem;
+}
+
+.connected .circle {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    transform: translate(43%, 0);
+}
+
+.connected .circle img {
+    position: absolute;
+}
+
+.connected .circle img:nth-of-type(1) {
+    transform: translateY(-100px);
+}
+
+.connected .circle img:nth-of-type(2) {
+    transform: translateX(+100px);
+}
+
+.connected .circle img:nth-of-type(3) {
+    transform: translateY(100px);
+}
+
+.connected .circle img:nth-of-type(4) {
+    transform: translateX(-100px);
+}
+
+@media only screen and (max-width: 769px) {
+    .main,
+    .who,
+    .what,
+    .review,
+    .connected {
+        padding: 0;
+        margin: 0;
+    }
+    .left-dots {
+        display: none;
+    }
+    .main {
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+    /*--------Main -----------*/
+    .main .right {
+        position: relative;
+        margin: 0 10%;
+    }
+    .image-bottom {
+        position: absolute;
+        /* right: 0; */
+        top: 0;
+        left: 0;
+        width: 90%;
+        z-index: -1;
+        /* margin: auto; */
+        /* padding: 0 10%; */
+    }
+    .image-top {
+        padding-top: 10%;
+        /* padding-right: 5%; */
+        padding-left: 8%;
+        width: 96%;
+    }
+    .main img {
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    /*----Who ------*/
+    .who {
+        margin: 0 10%;
+    }
+    .who .section-title h1 {
+        font-size: 17px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .who p {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        color: #797878;
+    }
+    /*---What ----*/
+    .what .content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr;
+    }
+    .what .content div:nth-child(1) {
+        order: 2;
+        margin-bottom: 3rem;
+    }
+    .what .content div:nth-child(2) {
+        order: 1;
+    }
+    .what .content div:nth-child(3) {
+        order: 3;
+    }
+    .what .content div:nth-child(4) {
+        order: 4;
+        margin-bottom: 2rem;
+    }
+    .what .content .detail {
+        padding: 3rem 2rem;
+    }
+    .what .content .detail.dark {
+        padding-left: 10%;
+    }
+    .what .content .detail.light {
+        padding-right: 10%;
+    }
+    .what .content .detail .line {
+        display: block;
+        width: 80px;
+        height: 2px;
+        margin: 1rem;
+    }
+    .what .content .detail h3 {
+        font-size: 18px;
+    }
+    .what .content .detail p {
+        font-size: 12px;
+    }
+    .section-title.light h1 {
+        font-size: 18px;
+        border-top: 2px solid #FBFBFB;
+        border-bottom: 2px solid #FBFBFB;
+    }
+    /*----Review----*/
+    .review .container {
+        display: flex;
+        padding-top: 3.75em;
+        justify-content: unset;
+        align-items: center;
+        overflow-y: auto;
+    }
+    .review .card .review p {
+        padding: 0;
+        width: 15rem;
+    }
+    #review-scroll::-webkit-scrollbar {
+        height: 10px;
+        -webkit-appearance: none;
+    }
+    #review-scroll::-webkit-scrollbar-track {
+        background: transparent;
+        border-left: 1px solid rgba(0, 0, 0, 0.068);
+        border-radius: 10px;
+        background-color: #ffffff;
+    }
+    #review-scroll::-webkit-scrollbar-thumb {
+        background: #504B4B;
+        background-color: rgba(0, 0, 0, .5);
+        border-radius: 10px;
+        border: 2px solid #ffffff;
+    }
+    #review-scroll::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    #review-scroll::-webkit-scrollbar:vertical {
+        width: 12px;
+    }
+    #review-scroll::-webkit-scrollbar:horizontal {
+        height: 12px;
+    }
+    .connected h1 {
+        font-size: 30px;
+        padding: 0 1rem;
+        margin-top: 2rem;
+    }
+    .container h2 {
+        text-align: center;
+        padding: 0 1rem;
+        font-size: 30px;
+    }
+    /*-----Connected-------*/
+    .connected .social {
+        padding: 10rem 0;
+    }
+    .connected .circle {
+        position: absolute;
+        top: 30%;
+        left: -18px;
+        right: 18px;
+    }
+}
+
+
+/*-----------------
+    ]] ANIMATION ]]
+-------------------*/
+
+@keyframes floatUp20 {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+@keyframes floatUp10 {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-10px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+@keyframes floatDown10 {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(10px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+@keyframes floatLeft10 {
+    0% {
+        transform: translatex(0px);
+    }
+    50% {
+        transform: translatex(-10px);
+    }
+    100% {
+        transform: translatex(0px);
+    }
+}
+
+@keyframes floatRight10 {
+    0% {
+        transform: translatex(0px);
+    }
+    50% {
+        transform: translatex(+10px);
+    }
+    100% {
+        transform: translatex(0px);
+    }
+}
+
+@keyframes float-with-shadow {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.068);
+        transform: translatey(0px);
+    }
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.068);
+        transform: translatey(-20px);
+    }
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.068);
+        transform: translatey(0px);
+    }
+}
+
+@keyframes zoom-1-1 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes zoom-1-2 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes shadow-social {
+    0% {
+        box-shadow: 3px 4px 4px rgba(0, 0, 0, 0);
+    }
+    50% {
+        box-shadow: 3px 4px 10px black;
+    }
+    100% {
+        box-shadow: 3px 4px 4px rgba(0, 0, 0, 0);
+    }
+}
+
+@keyframes shadow-light {
+    0% {
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0);
+    }
+    50% {
+        box-shadow: 0px 2px 5px black;
+    }
+    100% {
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0);
+    }
+}
+
+.main .left {
+    animation: floatUp20 6s ease-in-out infinite;
+}
+
+
+/*
+.what .image img {
+    animation: floatUp10 6s ease-in-out infinite;
+}
+
+*/
+
+
+/*--card animation 
+
+.review .card.leftt {
+    animation: floatLeft10 6s ease-in-out infinite, shadow-light 6s ease-in-out infinite;
+}
+
+.review .card.centerr {
+    animation: floatUp10 6s ease-in-out infinite, shadow-light 6s ease-in-out infinite;
+}
+
+.review .card.rightt {
+    animation: floatRight10 6s ease-in-out infinite, shadow-light 6s ease-in-out infinite;
+}
+
+.review .cta-btn {
+    animation: floatDown10 6s ease-in-out infinite, shadow-light 6s ease-in-out infinite;
+}
+
+--*/
+
+
+/*--social circle 
+
+.connected .social .item {
+    animation: shadow-social 6s ease-in-out infinite;
+}
+
+.connected .social {
+    animation: zoom-1-1 6s ease-in-out infinite;
+}
+
+.connected .social img.doge {
+    animation: zoom-1-2 6s ease-in-out infinite !important;
+}
+--*/
