@@ -134,6 +134,7 @@ img {
 
 .contact .container .img-left img
 {
+    position: fixed;
     width: 176.9px;
     height: 214.47px;
     opacity: 0.08;
@@ -142,6 +143,7 @@ img {
 
 .contact .container .img-right img
 {
+    position: fixed;
     width: 93.31px;
     height: 113.13px;
     opacity: 0.08;
