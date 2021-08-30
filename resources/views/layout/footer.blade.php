@@ -11,13 +11,33 @@
             </ul>
             <div class="mid-footer">
                 <img src="./images/logo/TTfooterlogo.svg">
-                <div class="newsletter">
-                    <p class="up">Stay updated with the latest news on the trading block X)</p>
-                    <div class="email-input-d">
-                        <input type="email" name="email_add" placeholder="Enter your email"><button class="email-btn">GET IT!</button>
+                <form method="POST" action="/">
+                    
+                    <div class="newsletter">
+                        <p class="up">Stay updated with the latest news on the trading block X)</p>
+                        <div class="email-input-d">
+                            @csrf
+                            <input type="email" name="email" placeholder="Enter your email" required><button type="submit" class="email-btn">GET IT!</button>
+                        </div>
+                        <p class="no-spam">No spam, unsub anytime.</p>
+
+                        @error('email')
+                            <p class="up">{{ $message }}</p>
+                        @enderror
+
+                        <div>
+                            @if(session('successMail'))
+                                <p class="success" style="font-size: 12px;">
+                                    {{ session('successMail') }}
+                                </p>
+                            @elseif(session('failureMail'))  
+                                <p class="failure" style="font-size: 12px;">
+                                    {{ session('failureMail') }}
+                                </p>
+                            @endif
+                        </div>
                     </div>
-                    <p class="no-spam">No spam, unsub anytime.</p>
-                </div>
+                </form>
             </div>
             <div class="end-footer">
                 <div></div>

@@ -24,11 +24,14 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::post('/',[HomeController::class, 'store']);
+
 Route::get('/course', [CourseController::class, 'index'])->name('course');
 Route::get('/videos', [VideosController::class, 'index'])->name('videos');
 Route::get('/about', [AboutController::class, 'index'])->name('about');
 Route::get('/contact-me', [ContactController::class, 'index'])->name('contact');
 Route::get('/purchase', [PaymentController::class, 'index'])->name('purchase');
+
 
 
 Route::middleware(['auth', 'student'])->group( function(){
