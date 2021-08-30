@@ -259,11 +259,11 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 0 6em 0;
 }
 
 .who .first
 {
-    height: 70vh;
     width: 70%;
     padding: 0 0.5em 0 0;
 }
@@ -277,7 +277,7 @@ img {
 
 .who .second
 {
-    padding: 5% 0 10% 10%;
+    padding: 5% 0 5% 10%;
 }
 
 .who .second h2
@@ -332,7 +332,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.9em 0 0 0;
+    padding: 3em 0 0 0;
 }
 
 .vids .discover h1
@@ -349,7 +349,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 10%;
+    margin: 3em 10%;
 }
 
 .vids .container .second h2
@@ -756,6 +756,7 @@ img {
     .who .container
     {
         flex-direction: column;
+        padding: 0;
     }
 
     .who .first
