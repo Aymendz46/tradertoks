@@ -29,6 +29,11 @@
      color: #504B4C;
  }
  
+ footer ul a:hover {
+     color: rgb(42, 119, 23);
+     transition: 0.5s;
+ }
+ 
  footer .mid-footer {
      display: flex;
      align-items: center;
@@ -61,8 +66,8 @@
      line-height: 15px;
      color: #44A26F;
  }
-
-  .newsletter .failure {
+ 
+ .newsletter .failure {
      font-family: Poppins;
      font-style: normal;
      font-weight: 600;
@@ -70,8 +75,7 @@
      line-height: 15px;
      color: #cf5f5f;
  }
-
-
+ 
  .newsletter input {
      margin-right: -3px;
      margin: 0.4em 0;
@@ -104,6 +108,13 @@
      margin: 0.4em 0 0.4em -75px;
  }
  
+ .newsletter .email-btn:hover {
+     cursor: pointer;
+     background: transparent;
+     color: #504B4C;
+     transition: 0.5s;
+ }
+ 
  .newsletter .no-spam {
      font-family: Poppins;
      font-style: normal;
@@ -130,6 +141,18 @@
      padding: 0 0.4em;
      width: 34px;
      height: 24px;
+ }
+ 
+ .footer-link {
+     text-decoration: none;
+     color: #000000;
+     transition: 0.5s;
+ }
+ 
+ .footer-link:hover {
+     text-decoration: none;
+     color: #504B4C;
+     transition: 0.5s;
  }
  
  @media only screen and (max-width: 769px) {

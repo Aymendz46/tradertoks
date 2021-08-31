@@ -56,6 +56,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 3em 0;
+    padding-top: 0;
 }
 
 .section-title h1 {
@@ -107,8 +108,6 @@ body {
 .dots.active {
     background: #504B4B;
 }
-
-
 
 
 /*--------------------
@@ -169,6 +168,7 @@ img {
     align-items: center;
 }
 
+
 /*.who .first
 {
     height: 89vh;
@@ -176,28 +176,24 @@ img {
     padding: 0 0.5em 0 0;
 }*/
 
-.who .first .image-bottom
-{
+.who .first .image-bottom {
     position: absolute;
     padding-top: 20px;
     padding-left: 20px;
 }
 
-.who .second
-{
+.who .second {
     padding: 5%;
     text-align: center;
 }
 
-.who .second h2
-{
+.who .second h2 {
     font-weight: 500;
     font-size: 48px;
     color: #504B4B;
 }
 
-.who .second .line
-{
+.who .second .line {
     display: block;
     width: 40px;
     height: 2px;
@@ -214,8 +210,7 @@ img {
     margin: 3em 0;
 }
 
-.who .btn
-{
+.who .btn {
     width: 208px;
     height: 61px;
     border: 2px solid #504B4B;
@@ -228,7 +223,6 @@ img {
     color: #504B4B;
     background: none;
 }
-
 
 
 /*--------------------
@@ -248,7 +242,8 @@ img {
 
 .course .container .card {
     display: grid;
-    margin: 0 2em;;    
+    margin: 0 2em;
+    ;
     width: 370px;
     height: 350px;
 }
@@ -279,7 +274,7 @@ img {
     color: #504B4B;
 }
 
-.card .course.description{
+.card .course.description {
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -301,13 +296,11 @@ img {
     letter-spacing: 0.1em;
 }
 
-.card .difficulty p
-{
+.card .difficulty p {
     padding: 0.8em
 }
 
-.card .difficulty .level
-{
+.card .difficulty .level {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -425,12 +418,10 @@ img {
     .who,
     .what,
     .course,
-    .connected
-    .who .image-bottom,
+    .connected .who .image-bottom,
     .who .image-top,
     .who .second,
-    .who .first
-     {
+    .who .first {
         padding: 0;
         margin: 0;
     }
@@ -444,7 +435,8 @@ img {
     /*--------Main -----------*/
     .main .right {
         position: relative;
-        margin: 5% 10% 0 10%;;
+        margin: 5% 10% 0 10%;
+        ;
     }
     .image-bottom {
         position: absolute;
@@ -467,53 +459,37 @@ img {
         width: 100%;
         margin: auto;
     }
-
     /*----Newsletter---*/
-
-    .newsletter-mid{
+    .newsletter-mid {
         width: 250px;
     }
-
-    .newsletter-cont .section-title.light h2
-    {
+    .newsletter-cont .section-title.light h2 {
         text-align: center;
         font-size: 32px;
     }
-
-    .newsletter-cont .sub-title
-    {
+    .newsletter-cont .sub-title {
         font-size: 12px;
     }
-
     /*----Who ------*/
-
     .who {
         margin: 0 10%;
     }
-
     .who .section-title h1 {
         font-size: 28px;
         padding-left: 0;
         padding-right: 0;
         width: 70%;
     }
-
-    .who .second h2
-    {
+    .who .second h2 {
         font-size: 22px;
     }
-
-    .who .container
-    {
+    .who .container {
         flex-direction: column;
     }
-
-    .who .first
-    {
+    .who .first {
         width: auto;
         height: auto;
     }
-
     .who p {
         font-style: normal;
         font-weight: 500;
@@ -521,35 +497,25 @@ img {
         color: #797878;
         margin: 1.5em 0;
     }
-
     .who .second {
         padding: 1em 5% 3em 5%;
         text-align: center;
     }
-
-    .who .second h2
-    {
+    .who .second h2 {
         margin: 0.5em 0;
         font-weight: 600;
         font-size: 32px;
         color: #504B4B;
     }
-
-    .who .second .line
-    {
+    .who .second .line {
         display: none;
     }
-
-    .who .first .image-bottom
-    {
+    .who .first .image-bottom {
         display: none;
     }
-
-    .who .container .first img
-    {
-        width: 100vw;        
+    .who .container .first img {
+        width: 100vw;
     }
-
     /*---What ----*/
     .what .content {
         display: grid;
@@ -596,9 +562,7 @@ img {
         border-top: 2px solid #FBFBFB;
         border-bottom: 2px solid #FBFBFB;
     }
-
     /*-----Connected-------*/
-
     .connected .social {
         padding: 10rem 0;
     }
@@ -608,8 +572,7 @@ img {
         left: -18px;
         right: 18px;
     }
-    .connected h2
-    {
+    .connected h2 {
         padding: 1.5em;
         font-size: 32px;
     }

@@ -228,6 +228,14 @@ label {
     background: none;
 }
 
+.contact .btn:hover {
+    cursor: pointer;
+    background: #504B4B;
+    color: white;
+    transition: 0.5s;
+    font-weight: 500;
+}
+
 .contact form .input-group {
     display: flex;
     flex-direction: column;
@@ -242,12 +250,6 @@ label {
 .contact form .row .input-group {
     flex-basis: 48%;
 }
-
-.contact form .row .input-group,
-textarea {}
-
-.contact form .input-group input,
-textarea {}
 
 
 /*--------------------

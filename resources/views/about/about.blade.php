@@ -40,7 +40,6 @@
                     with misinformation and decided to share what he has learned over several
                     years through social media. Thus, Tradertoks was born.
                 </p>
-                <button href="{{ route('about') }}" class="btn">LEARN MORE <i class="fas fa-angle-double-right"></i></button>
             </div>
             </div>    
         </div>

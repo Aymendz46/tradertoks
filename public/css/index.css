@@ -113,8 +113,7 @@ body {
         News letter 
 ----------------------*/
 
-.newsletter-cont 
-{
+.newsletter-cont {
     margin: 4em 0 0 0;
     background: #504B4B;
     display: flex;
@@ -126,8 +125,7 @@ body {
     padding: 2em;
 }
 
-.newsletter .section-title
-{   
+.newsletter .section-title {
     font-size: 48px;
     color: #EDEEEE;
 }
@@ -137,8 +135,7 @@ body {
     color: #FFFFFF;
 }
 
-.newsletter-mid
-{
+.newsletter-mid {
     width: 500px;
     padding: 1.5em 0;
 }
@@ -170,14 +167,22 @@ body {
     font-weight: 500;
 }
 
+.newsletter-mid .email-btn:hover {
+    cursor: pointer;
+    background: #aaaaaa;
+    color: #ffffff;
+    transition: 0.5s;
+    border: 2px solid white;
+    border-left: none;
+}
+
 .newsletter-cont .no-spam {
     padding-bottom: 4em;
     font-size: 12px;
     color: #b9b7b7;
 }
 
-.newsletter-cont .section-title.light h2
-{
+.newsletter-cont .section-title.light h2 {
     padding: 0;
     border: none;
     color: #EDEEEE;
@@ -186,22 +191,17 @@ body {
     font-style: normal;
 }
 
-.section-title h2 span
-{
+.section-title h2 span {
     color: #44A26F;
 }
 
-.newsletter-cont .subsection
-{
+.newsletter-cont .subsection {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.newsletter-cont .section-title.light {
-    
-}
 
 /*--------------------
         Main
@@ -241,10 +241,6 @@ body {
     width: 80%;
 }
 
-img {
-    display: block;
-}
-
 
 /*--------------------
         Who
@@ -262,33 +258,28 @@ img {
     padding: 0 0 6em 0;
 }
 
-.who .first
-{
+.who .first {
     width: 70%;
     padding: 0 0.5em 0 0;
 }
 
-.who .first .image-bottom
-{
+.who .first .image-bottom {
     position: absolute;
     padding-top: 20px;
     padding-left: 20px;
 }
 
-.who .second
-{
+.who .second {
     padding: 5% 0 5% 10%;
 }
 
-.who .second h2
-{
+.who .second h2 {
     font-weight: 600;
     font-size: 48px;
     color: #504B4B;
 }
 
-.who .second .line
-{
+.who .second .line {
     display: block;
     width: 40px;
     height: 2px;
@@ -302,10 +293,13 @@ img {
     font-size: 14px;
     color: #757272;
     margin: 1.2em 0;
+    margin-bottom: 2rem;
 }
 
-.who .btn
-{
+.who .btn {
+    text-decoration: none;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
     width: 208px;
     height: 61px;
     border: 2px solid #504B4B;
@@ -319,6 +313,15 @@ img {
     background: none;
 }
 
+.who .btn:hover {
+    cursor: pointer;
+    background: #504B4B;
+    color: #fbfbfb;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+
 /*--------------------
         Latest Videos
 --------------------*/
@@ -327,21 +330,18 @@ img {
     background: #504B4B;
 }
 
-.vids .discover
-{
+.vids .discover {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 3em 0 0 0;
 }
 
-.vids .discover h1
-{
+.vids .discover h1 {
     font-family: Bebas Neue;
     font-style: normal;
     font-weight: normal;
     font-size: 64px;
-    line-height: 77px;
     color: #504B4B;
 }
 
@@ -352,37 +352,31 @@ img {
     margin: 3em 10%;
 }
 
-.vids .container .second h2
-{
+.vids .container .second h2 {
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
-    line-height: 28px;
     letter-spacing: -0.06em;
     text-transform: uppercase;
     color: #504B4B;
 }
 
-.vids .first
-{
+.vids .first {
     width: 70%;
     padding: 0 0.5em 0 0;
 }
 
-.vids .first .image-bottom
-{
+.vids .first .image-bottom {
     position: absolute;
     padding-top: 20px;
     padding-left: 20px;
 }
 
-.vids .second
-{
+.vids .second {
     padding: 5% 0 5% 10%;
 }
 
-.vids .second .line
-{
+.vids .second .line {
     display: block;
     width: 40px;
     height: 2px;
@@ -396,10 +390,13 @@ img {
     font-size: 14px;
     color: #757272;
     margin: 1em 0;
+    margin-bottom: 2rem;
 }
 
-.vids .btn
-{
+.vids .btn {
+    text-decoration: none;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
     width: 208px;
     height: 61px;
     border: 2px solid #504B4B;
@@ -411,6 +408,14 @@ img {
     text-align: center;
     color: #504B4B;
     background: none;
+}
+
+.vids .btn:hover {
+    cursor: pointer;
+    background: #504B4B;
+    color: #fbfbfb;
+    font-weight: 500;
+    transition: 0.5s;
 }
 
 
@@ -503,7 +508,8 @@ img {
 
 .course .container .card {
     display: grid;
-    margin: 0 2em;;    
+    margin: 0 2em;
+    ;
     width: 370px;
     height: 350px;
 }
@@ -534,11 +540,10 @@ img {
     color: #504B4B;
 }
 
-.card .course.description{
+.card .course.description {
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
-    line-height: 22px;
     text-align: center;
     letter-spacing: 0.1em;
     color: #777575;
@@ -556,13 +561,11 @@ img {
     letter-spacing: 0.1em;
 }
 
-.card .difficulty p
-{
+.card .difficulty p {
     padding: 0.8em
 }
 
-.card .difficulty .level
-{
+.card .difficulty .level {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -600,7 +603,6 @@ img {
 
 .course .cta-btn {
     width: 487px;
-    height: 74px;
     font-style: normal;
     font-weight: 500;
     font-size: 26px;
@@ -608,6 +610,16 @@ img {
     color: #FBFBFB;
     background: #504B4B;
     border: none;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.course .cta-btn:hover {
+    cursor: pointer;
+    background: #dedede;
+    color: #504B4B;
+    transition: 0.5s;
 }
 
 
@@ -652,26 +664,36 @@ img {
     top: 30%;
     left: 0;
     right: 0;
-    transform: translate(43%, 0);
+    transform: translate(0%, 0);
 }
 
-.connected .circle img {
+.connected .circle .item {
     position: absolute;
 }
 
-.connected .circle img:nth-of-type(1) {
+.connected .circle .item:hover img {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.connected .circle .doge:hover img {
+    transform: scale(0.8);
+    transition: 0.5s;
+}
+
+.connected .circle .item:nth-of-type(1) {
     transform: translateY(-100px);
 }
 
-.connected .circle img:nth-of-type(2) {
+.connected .circle .item:nth-of-type(2) {
     transform: translateX(+100px);
 }
 
-.connected .circle img:nth-of-type(3) {
+.connected .circle .item:nth-of-type(3) {
     transform: translateY(100px);
 }
 
-.connected .circle img:nth-of-type(4) {
+.connected .circle .item:nth-of-type(4) {
     transform: translateX(-100px);
 }
 
@@ -680,12 +702,10 @@ img {
     .who,
     .what,
     .course,
-    .connected
-    .who .image-bottom,
+    .connected .who .image-bottom,
     .who .image-top,
     .who .second,
-    .who .first
-     {
+    .who .first {
         padding: 0;
         margin: 0;
     }
@@ -699,7 +719,8 @@ img {
     /*--------Main -----------*/
     .main .right {
         position: relative;
-        margin: 5% 10% 0 10%;;
+        margin: 5% 10% 0 10%;
+        ;
     }
     .image-bottom {
         position: absolute;
@@ -722,48 +743,34 @@ img {
         width: 100%;
         margin: auto;
     }
-
     /*----Newsletter---*/
-
-    .newsletter-mid{
+    .newsletter-mid {
         width: 250px;
     }
-
-    .newsletter-cont .section-title.light h2
-    {
+    .newsletter-cont .section-title.light h2 {
         text-align: center;
         font-size: 32px;
     }
-
-    .newsletter-cont .sub-title
-    {
+    .newsletter-cont .sub-title {
         font-size: 12px;
     }
-
     /*----Who ------*/
-
     .who {
         margin: 0 10%;
     }
-
     .who .section-title h1 {
         padding-left: 0;
         padding-right: 0;
         width: 70%;
     }
-
-    .who .container
-    {
+    .who .container {
         flex-direction: column;
         padding: 0;
     }
-
-    .who .first
-    {
+    .who .first {
         width: auto;
         height: auto;
     }
-
     .who p {
         font-style: normal;
         font-weight: 500;
@@ -771,35 +778,25 @@ img {
         color: #797878;
         margin: 1.5em 0;
     }
-
     .who .second {
         padding: 1em 5% 3em 5%;
         text-align: center;
     }
-
-    .who .second h2
-    {
+    .who .second h2 {
         margin: 0.5em 0;
         font-weight: 600;
         font-size: 32px;
         color: #504B4B;
     }
-
-    .who .second .line
-    {
+    .who .second .line {
         display: none;
     }
-
-    .who .first .image-bottom
-    {
+    .who .first .image-bottom {
         display: none;
     }
-
-    .who .container .first img
-    {
-        width: 100vw;        
+    .who .container .first img {
+        width: 100vw;
     }
-
     /*---What ----*/
     .what .content {
         display: grid;
@@ -846,13 +843,10 @@ img {
         border-top: 2px solid #FBFBFB;
         border-bottom: 2px solid #FBFBFB;
     }
-
     /*----course----*/
-    .course
-    {
+    .course {
         padding: 0em;
     }
-
     .course .container {
         display: flex;
         padding: 2em;
@@ -899,46 +893,34 @@ img {
         padding: 0 1rem;
         font-size: 30px;
     }
-
-    .course .cta-div p
-    {
+    .course .cta-div p {
         text-align: center;
         padding: 1em;
         font-size: 20px;
     }
-
-    .course .cta-btn
-    {
+    .course .cta-btn {
         width: 80%;
         height: 64px;
         font-size: 16px;
     }
-
     /*---- Vids ------*/
-
     .vids .container {
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
     }
-
     .vids .section-title h1 {
         padding-left: 0;
         padding-right: 0;
         width: 70%;
     }
-
-    .vids .container
-    {
+    .vids .container {
         flex-direction: column;
     }
-
-    .vids .first
-    {
+    .vids .first {
         width: 100vw;
     }
-
     .vids p {
         margin: 1.5em 0;
         font-family: Poppins;
@@ -947,44 +929,30 @@ img {
         font-size: 18px;
         color: #797878;
     }
-
-    .vids .container .first img
-    {
-        width: 100vw;        
+    .vids .container .first img {
+        width: 100vw;
     }
-
     .vids .second {
         padding: 2em 1em;
     }
-
-    .vids .second h2
-    {
+    .vids .second h2 {
         /*margin: 0.5em 0;*/
         color: #504B4B;
     }
-
-    .vids .second .line
-    {
+    .vids .second .line {
         display: none;
     }
-
-    .vids .first .image-bottom
-    {
+    .vids .first .image-bottom {
         display: none;
     }
-
-    .vids .discover
-    {
+    .vids .discover {
         padding: 0;
     }
-
-    .vids .discover h1
-    {
+    .vids .discover h1 {
         font-size: 48px;
         text-align: center;
         padding: 0.1em 1em;
     }
-
     /*-----Connected-------*/
     .connected .social {
         padding: 10rem 0;
@@ -995,9 +963,7 @@ img {
         left: -18px;
         right: 18px;
     }
-
-    .connected h2
-    {
+    .connected h2 {
         padding: 1.5em;
         font-size: 32px;
     }
