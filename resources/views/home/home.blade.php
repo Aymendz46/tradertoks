@@ -192,4 +192,6 @@
 
     </div>
 
+    @include('layout.loading')
+
 @endsection

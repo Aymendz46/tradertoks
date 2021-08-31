@@ -1,4 +1,4 @@
 $('#review-scroll').scrollLeft($('#review-scroll').width());
 setTimeout(function() {
     $('#loading').fadeOut();
-}, 2500);
+}, 2000);
