@@ -11,6 +11,8 @@
 <div class="background">
     <img src="images/logo/Logo0.2.svg">
     <img src="images/logo/Logo0.2.svg">
+    <img src="images/logo/Logo0.2.svg">
+    <img src="images/logo/Logo0.2.svg">
 </div>
 <div class="contact">
             <div class="section-title">
@@ -30,6 +32,7 @@
                             <label for="email">Email:</label>
                             <input type="email" name="email" placeholder="Your email" required>
                         </div>
+                    </div>    
                         <div class="input-group">
                             <label for="subject">Subject:</label>
                             <input type="text" name="subject" placeholder="Subject" required>
@@ -43,5 +46,4 @@
                 </div>
             </div>              
         </div>
-
 @endsection
