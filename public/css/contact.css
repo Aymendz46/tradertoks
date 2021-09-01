@@ -117,14 +117,12 @@ img {
         contact
 --------------------*/
 
-.contact
-{
+.contact {
     width: 100%;
     padding: 0 0 8em 0;
 }
 
-.contact .container
-{
+.contact .container {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -132,56 +130,74 @@ img {
     justify-content: space-around;
 }
 
-.contact .container .img-left img
-{
-    position: fixed;
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.background img {
+    position: absolute;
+}
+
+.background img:nth-of-type(1) {
+    top: 19%;
+    left: 10%;
+    right: 0;
+    bottom: 0;
     width: 176.9px;
     height: 214.47px;
-    opacity: 0.08;
     transform: rotate(-14.13deg);
 }
 
-.contact .container .img-right img
-{
-    position: fixed;
+.background img:nth-of-type(2) {
+    top: 7%;
+    left: 85%;
+    right: 1%;
+    bottom: 1%;
     width: 93.31px;
     height: 113.13px;
-    opacity: 0.08;
     transform: rotate(5.09deg);
 }
 
-.contact .container .img-left
-{
-    width: 10%;
+.background img:nth-of-type(3) {
+    top: 25%;
+    left: 81%;
+    right: 1%;
+    bottom: 1%;
+    width: 53.31px;
+    height: 113.13px;
+    transform: rotate(47deg);
 }
 
-.contact .container .img-right
-{
-    width: 10%;
-    position: relative;
-    top: -100px;
+.background img:nth-of-type(4) {
+    top: 43%;
+    left: 62%;
+    right: 0%;
+    bottom: 1%;
+    width: 93.31px;
+    height: 113.13px;
+    transform: rotate(5.09deg);
 }
 
-.contact .container .mid
-{
+.contact .container .mid {
     width: 50%;
     display: flex;
     justify-content: center;
 }
 
-.contact form
-{
+.contact form {
     width: 90%;
     max-width: 600px;
 }
 
-.contact form .input-group
-{
+.contact form .input-group {
     margin: 0 0 1.5em 0;
 }
 
-input, textarea
-{
+input,
+textarea {
     max-width: 600px;
     width: 100%;
     padding: 10px;
@@ -193,14 +209,12 @@ input, textarea
     font-size: 15px;
 }
 
-label
-{
+label {
     font-weight: bold;
     cursor: pointer;
 }
 
-.contact .btn
-{
+.contact .btn {
     width: 208px;
     height: 61px;
     border: 2px solid #504B4B;
@@ -214,32 +228,27 @@ label
     background: none;
 }
 
-.contact form .input-group
-{
+.contact .btn:hover {
+    cursor: pointer;
+    background: #504B4B;
+    color: white;
+    transition: 0.5s;
+    font-weight: 500;
+}
+
+.contact form .input-group {
     display: flex;
     flex-direction: column;
 }
 
-.contact form .row
-{
+.contact form .row {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.contact form .row .input-group
-{
+.contact form .row .input-group {
     flex-basis: 48%;
-}
-
-.contact form .row .input-group, textarea
-{
-    
-}
-
-.contact form .input-group input, textarea
-{
-    
 }
 
 
@@ -260,7 +269,8 @@ label
 
 .course .container .card {
     display: grid;
-    margin: 0 2em;;    
+    margin: 0 2em;
+    ;
     width: 370px;
     height: 350px;
 }
@@ -291,7 +301,7 @@ label
     color: #504B4B;
 }
 
-.card .course.description{
+.card .course.description {
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -313,13 +323,11 @@ label
     letter-spacing: 0.1em;
 }
 
-.card .difficulty p
-{
+.card .difficulty p {
     padding: 0.8em
 }
 
-.card .difficulty .level
-{
+.card .difficulty .level {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -437,12 +445,10 @@ label
     .contact,
     .what,
     .course,
-    .connected
-    .contact .image-bottom,
+    .connected .contact .image-bottom,
     .contact .image-top,
     .contact .second,
-    .contact .first
-     {
+    .contact .first {
         padding: 0;
         margin: 0;
     }
@@ -456,7 +462,8 @@ label
     /*--------Main -----------*/
     .main .right {
         position: relative;
-        margin: 5% 10% 0 10%;;
+        margin: 5% 10% 0 10%;
+        ;
     }
     .image-bottom {
         position: absolute;
@@ -479,59 +486,42 @@ label
         width: 100%;
         margin: auto;
     }
-
     /*----Newsletter---*/
-
-    .newsletter-mid{
+    .newsletter-mid {
         width: 250px;
     }
-
-    .newsletter-cont .section-title.light h2
-    {
+    .newsletter-cont .section-title.light h2 {
         text-align: center;
         font-size: 32px;
     }
-
-    .newsletter-cont .sub-title
-    {
+    .newsletter-cont .sub-title {
         font-size: 12px;
     }
-
     /*----contact ------*/
-
     .contact {
         margin: 0 0 3em 0;
     }
-
     .contact .section-title h1 {
         font-size: 28px;
         padding-left: 0;
         padding-right: 0;
         width: 70%;
     }
-
-    .contact .container .img-right, .img-left
-    {
+    .contact .container .img-right,
+    .img-left {
         display: none;
     }
-
-    .contact form
-    {
+    .contact form {
         margin: 2em;
         width: auto;
     }
-
-    .contact .btn
-    {
+    .contact .btn {
         width: 100%;
     }
-
     .contact .container .mid {
         width: auto;
     }
-
     /*---What ----*/
-
     .what .content {
         display: grid;
         grid-template-columns: 1fr;
@@ -577,9 +567,7 @@ label
         border-top: 2px solid #FBFBFB;
         border-bottom: 2px solid #FBFBFB;
     }
-
     /*-----Connected-------*/
-
     .connected .social {
         padding: 10rem 0;
     }
@@ -589,8 +577,7 @@ label
         left: -18px;
         right: 18px;
     }
-    .connected h2
-    {
+    .connected h2 {
         padding: 1.5em;
         font-size: 32px;
     }

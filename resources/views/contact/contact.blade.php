@@ -9,7 +9,12 @@
 @endsection
 
 @section('content')
-
+<div class="background">
+    <img src="images/logo/Logo0.2.svg">
+    <img src="images/logo/Logo0.2.svg">
+    <img src="images/logo/Logo0.2.svg">
+    <img src="images/logo/Logo0.2.svg">
+</div>
 <div class="contact">
             <div class="section-title">
                 <h1>
@@ -17,10 +22,8 @@
                 </h1>
             </div>
             <div class="container">
-                <div class="img-left">
-                    <img src="images/logo/Logo.svg">
-                </div>   
                 <div class="mid">
+<<<<<<< HEAD
                     <form method="POST" action="/booking">
                     <div class="row">
                         <div class="input-group">
@@ -30,25 +33,30 @@
                         <div class="input-group">    
                             <label for="email">Email:</label>
                             <input type="email" name="email" placeholder="Your email" required>
+=======
+                    <form>
+                        <div class="row">
+                            <div class="input-group">
+                                <label for="name">Name:</label>
+                                <input type="text" name="name" placeholder="Your name" required>
+                            </div>
+                            <div class="input-group">    
+                                <label for="email">Email:</label>
+                                <input type="email" name="email" placeholder="Your email" required>
+                            </div>
+>>>>>>> 1a6a406bb7a69ebe4b20f40984de015f728f0fbc
                         </div>
-                    </div>
                         <div class="input-group">
                             <label for="subject">Subject:</label>
                             <input type="text" name="subject" placeholder="Subject" required>
                         </div>
                         <div class="input-group">
                             <label for="message">Message:</label>
-                            <textarea name="message" required> Write your message!
-                            </textarea>
+                            <textarea name="message" placeholder="Write your message!" required></textarea>
                         </div>
                         <button type="submit" href="#" class="btn">Send it my way!</button>
-                    </div> 
-                </form>
-                <div class="img-right">
-                    <img src="images/logo/Logo.svg">
+                    </form>
                 </div>
-                </div>
-
             </div>              
         </div>
 

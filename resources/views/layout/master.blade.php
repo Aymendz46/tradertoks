@@ -41,7 +41,6 @@
     @yield('content')
 
     @include('layout.footer')
-    @include('layout.loading')
 
 
     
