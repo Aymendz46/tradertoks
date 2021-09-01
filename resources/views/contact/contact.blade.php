@@ -23,7 +23,6 @@
             </div>
             <div class="container">
                 <div class="mid">
-<<<<<<< HEAD
                     <form method="POST" action="/booking">
                     <div class="row">
                         <div class="input-group">
@@ -33,18 +32,6 @@
                         <div class="input-group">    
                             <label for="email">Email:</label>
                             <input type="email" name="email" placeholder="Your email" required>
-=======
-                    <form>
-                        <div class="row">
-                            <div class="input-group">
-                                <label for="name">Name:</label>
-                                <input type="text" name="name" placeholder="Your name" required>
-                            </div>
-                            <div class="input-group">    
-                                <label for="email">Email:</label>
-                                <input type="email" name="email" placeholder="Your email" required>
-                            </div>
->>>>>>> 1a6a406bb7a69ebe4b20f40984de015f728f0fbc
                         </div>
                         <div class="input-group">
                             <label for="subject">Subject:</label>
