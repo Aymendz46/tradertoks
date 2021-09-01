@@ -258,8 +258,6 @@ img {
 .who .container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 0 0 6em 0;
 }
 
 .who .first
@@ -277,7 +275,7 @@ img {
 
 .who .second
 {
-    padding: 5% 0 5% 10%;
+    padding: 7% 0 10% 15%;
 }
 
 .who .second h2
@@ -755,6 +753,7 @@ img {
     .who .container
     {
         flex-direction: column;
+        align-items: center;
         padding: 0;
     }
 

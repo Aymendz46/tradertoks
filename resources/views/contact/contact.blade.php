@@ -21,7 +21,7 @@
                     <img src="images/logo/Logo.svg">
                 </div>   
                 <div class="mid">
-                    <form>
+                    <form method="POST" action="/booking">
                     <div class="row">
                         <div class="input-group">
                             <label for="name">Name:</label>
