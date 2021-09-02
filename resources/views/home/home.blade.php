@@ -97,7 +97,7 @@
             <!-- card 1 -->
             <div class="card leftt ">
                 <div class="thumbnail ">
-                    <img src="./images/product/Chart.svg ">
+                    <img src="./images/product/chart.svg ">
                 </div>
                 <div class="episode-title">
                     <p>Candle Sticks - Beginners</p>
@@ -115,7 +115,7 @@
             <!-- card 2 -->
             <div class="card rightt ">
                 <div class="thumbnail ">
-                    <img src="./images/product/Chart.svg ">
+                    <img src="./images/product/chart.svg ">
                 </div>
                 <div class="episode-title">
                     <p>Candle Sticks - Intermediate</p>
