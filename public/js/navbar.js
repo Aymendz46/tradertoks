@@ -49,3 +49,11 @@ function hideMenuMobile() {
 
     $('#nav-modal').addClass('hide');
 }
+
+function closeAlert()
+{
+    //const closeBtn = document.getElementsByClassName("close")[4];
+    const alertDiv = document.getElementsByClassName("alert")[0];
+
+    alertDiv.style.display = "none";
+}

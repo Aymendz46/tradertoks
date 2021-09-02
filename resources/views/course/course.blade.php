@@ -13,7 +13,15 @@
  <!------------------------------>
         <!-- MAIN -->
         <div class="main">
-            <div class="left">
+            <img src="/images/logo/THE MW ACADEMY logo.svg" alt="THE MW Academy Course logo" style="filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.25));">
+            <div class="container ">
+                <div class="cta-div ">
+                    <h2>Are you ready to start the course?</h2>
+                    <a href="{{ route('purchase') }}" class="cta-btn">YES! Enroll!</a>
+                </div>
+            </div>            
+
+            <!--div class="left">
                 <h3>The popular</h3>
                 <img src="images/logo/title.svg " alt="Trader Course ">
             </div>
@@ -24,7 +32,7 @@
                 <div class="image-top">
                     <img src="images/toks/toks1.png " alt="Trader Toks ">
                 </div>
-            </div>
+            </div-->
         </div>
 
         <!------------------------------>
@@ -32,7 +40,7 @@
         <div class="who ">
             <div class="section-title ">
                 <h1>
-                    WHO IS THIS COURSE FOR?
+                    The path to become a profitable trader
                 </h1>
             </div>
             <p>
@@ -93,9 +101,12 @@
                     </h1>
                 </div>
             </div>
-            <!-- cards -->
+            <div class="container">
+                <h2>Coming soon.</h2>
+            </div>
+            <!-- cards
             <div id="review-scroll " class="container ">
-                <!-- card 1 -->
+                <!-- card 1 
                 <div class="card leftt ">
                     <div class="profile-pic ">
                         <img src="images/components/profilepic.svg ">
@@ -115,7 +126,7 @@
                         <img src="images/components/Star 5.svg ">
                     </div>
                 </div>
-                <!-- card 2 -->
+                <!-- card 2 
                 <div class="card active centerr ">
                     <div class="profile-pic ">
                         <img src="images/components/profilepicdark.svg ">
@@ -135,7 +146,7 @@
                         <img src="images/components/Star 5.svg ">
                     </div>
                 </div>
-                <!-- card 3 -->
+                <!-- card 3 --
                 <div class="card rightt ">
                     <div class="profile-pic ">
                         <img src="images/components/profilepic.svg ">
@@ -156,14 +167,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container ">
-                <div class="cta-div ">
-                    <h2>Are you ready to start the course?</h2>
-                    <a href="{{ route('purchase') }}" class="cta-btn">YES! Enroll!</a>
-                </div>
-
-            </div>
-        </div>
+        </div-->
 
         <!------------------------------>
         <!-- STAY CONNECTED WITH ME -->

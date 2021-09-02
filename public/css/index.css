@@ -177,9 +177,21 @@ body {
 }
 
 .newsletter-cont .no-spam {
-    padding-bottom: 4em;
+    padding-bottom: 1em;
     font-size: 12px;
     color: #b9b7b7;
+}
+
+.newsletter-cont .success
+{
+    font-size: 14px;
+    color: #44A26F;
+}
+
+.newsletter-cont .failure
+{
+    font-size: 14px;
+    color: #cf5f5f;
 }
 
 .newsletter-cont .section-title.light h2 {

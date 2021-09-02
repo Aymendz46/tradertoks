@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Newsletter;
+use Spatie\Newsletter\NewsletterFacade as Newsletter;
 
 class HomeController extends Controller
 {
@@ -14,12 +14,11 @@ class HomeController extends Controller
 
     public function store(Request $request)
     {
-        $email = request('email');
+        //$email = request('email');
 
-        if(! Newsletter::isSubscribed($email))
+        if (! Newsletter::isSubscribed($request->email)) 
         {
-            Newsletter::subscribe($email);
-
+            Newsletter::subscribe($request->email);
             return back()->with('successMail', 'You joined the troops! Check your email!');
         }
 

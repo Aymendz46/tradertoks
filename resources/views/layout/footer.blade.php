@@ -1,5 +1,19 @@
 <!--------------------------->
 <!-------Footer------------->
+<div>
+    @if(session('successMail'))
+        <div class="alert alert-success alert-dismissible">
+            <a onclick="closeAlert()" class="close" data-dismiss="alert" aria-label="close">×</a>
+            <div class="alert content">{{ session('successMail') }}</div>
+        </div>
+    @elseif(session('failureMail'))  
+        <div class="alert alert-danger alert-dismissible">
+            <a onclick="closeAlert()" class="close" data-dismiss="alert" aria-label="close">×</a>
+            <div class="alert content">{{ session('failureMail') }}</div>
+        </div>
+    @endif
+</div>
+
 <footer>
     <div class="ft-cont">
         <ul>
@@ -12,29 +26,14 @@
         <div class="mid-footer">
             <a href="{{ route('home') }}"><img src="./images/logo/TTfooterlogo.svg" ></a>
             <form method="POST" action="/">
+                @csrf
                 <div class="newsletter">
                     <p class="up">Stay updated with the latest news on the trading block X)</p>
                     <div class="email-input-d">
-                        @csrf
+                        
                         <input type="email" name="email" placeholder="Enter your email" required><button type="submit" class="email-btn">GET IT!</button>
                     </div>
                     <p class="no-spam">No spam, unsub anytime.</p>
-
-                    @error('email')
-                        <p class="up">{{ $message }}</p>
-                    @enderror
-
-                    <div>
-                        @if(session('successMail'))
-                            <p class="success" style="font-size: 12px;">
-                                {{ session('successMail') }}
-                            </p>
-                        @elseif(session('failureMail'))  
-                            <p class="failure" style="font-size: 12px;">
-                                {{ session('failureMail') }}
-                            </p>
-                        @endif
-                    </div>
                 </div>
             </form>
         </div>

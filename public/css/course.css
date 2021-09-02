@@ -55,7 +55,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem 0;
+    padding: 4rem 0;
 }
 
 .section-title h1 {
@@ -123,6 +123,7 @@ body {
 
 .main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: auto;
@@ -154,7 +155,7 @@ body {
 
 .who {
     margin: 0 10%;
-    padding: 4em 0 0 0;
+    padding: 3em 0 0 0
 }
 
 .who p {
@@ -213,10 +214,11 @@ body {
 }
 
 .what .content .detail.dark .line {
-    background-color: #fbfbfb;
+    background-color: #D3D3D3;
 }
 
 .what .content .detail.light {
+    color: #504B4B;
     background-color: #FBFBFB;
 }
 
@@ -246,7 +248,7 @@ body {
 
 .container {
     display: flex;
-    padding-top: 3.75em;
+    padding: 2em;
     justify-content: center;
     align-items: center;
 }
@@ -313,7 +315,6 @@ body {
 }
 
 .container .cta-div {
-    padding-bottom: 3.75em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -323,18 +324,18 @@ body {
 .container h2 {
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: normal;
-    font-size: 35px;
+    font-weight: 600;
+    font-size: 40px;
     /* identical to box height */
-    color: #504B4B;
+    color: #111111;
+    padding: 0 0 1em 0;
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
-    padding-bottom: 0.5em;
 }
 
 .container .cta-btn {
     width: 309px;
     height: 74px;
-    background: #504B4B;
+    background: #111111;
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
@@ -371,8 +372,7 @@ body {
     font-weight: normal;
     font-size: 35px;
     color: #FBFBFB;
-    padding: 1.5em 0;
-    padding-bottom: 1rem;
+    padding: 1.5em 1em;
 }
 
 .connected .line {
@@ -468,14 +468,14 @@ body {
     }
     .main img {
         display: block;
-        width: 100%;
+        /*width: 100%;*/
         margin: auto;
     }
     /*----Who ------*/
     .who {
         margin: 0 10%;
     }
-    .who .section-title h1 {
+    .section-title h1 {
         font-size: 17px;
         padding-left: 0;
         padding-right: 0;
@@ -536,8 +536,9 @@ body {
     /*----Review----*/
     .review .container {
         display: flex;
-        padding-top: 3.75em;
-        justify-content: unset;
+        padding: 3.75em;
+        /*justify-content: unset;*/
+        justify-content: center;
         align-items: center;
         overflow-y: auto;
     }
@@ -577,7 +578,7 @@ body {
     }
     .container h2 {
         text-align: center;
-        padding: 0 1rem;
+        padding: 0 1rem 1.5rem 1rem;
         font-size: 30px;
     }
     /*-----Connected-------*/

@@ -28,22 +28,30 @@
     </div>
 
     <!-- Newsletter section -->
-    <div class="newsletter-cont">
-        <div class="section-title light">
-            <h2>
-                JOIN THE <span>TRADER TROOPS!</span>
-            </h2>
-        </div>
-        <div class="subsection">
-            <p class="sub-title">
-                Stay updated with the latest news on the trading block X)
-            </p>
-            <div class="newsletter-mid">
-                <input type="email" name="email_add" placeholder="Enter your email"><button class="email-btn">GET IT!</button>
+    <form method="POST" action="/">
+        @csrf
+        <div class="newsletter-cont">
+            <div class="section-title light">
+                <h2>
+                    JOIN THE <span>TRADER TROOPS!</span>
+                </h2>
             </div>
-            <p class="no-spam">No spam, unsub anytime.</p>
+            <div class="subsection">
+                <p class="sub-title">
+                    Stay updated with the latest news on the trading block X)
+                </p>
+                <div class="newsletter-mid">
+                    <input type="email" name="email" placeholder="Enter your email" required><button type="submit" class="email-btn">GET IT!</button>
+                </div>
+                <p class="no-spam">No spam, unsub anytime.</p>
+
+                @error('email')
+                        <p class="up">{{ $message }}</p>
+                    @enderror
+
+            </div>
         </div>
-    </div>
+    </form>    
 
     <!------------------------------>
     <!-- WHO IS TRADER TOKS -->
