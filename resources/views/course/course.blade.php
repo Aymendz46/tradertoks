@@ -159,7 +159,7 @@
             <div class="container ">
                 <div class="cta-div ">
                     <h2>Are you ready to start the course?</h2>
-                    <button href="{{ route('purchase') }}" class="cta-btn ">YES! Enroll!</button>
+                    <a href="{{ route('purchase') }}" class="cta-btn">YES! Enroll!</a>
                 </div>
 
             </div>
@@ -168,18 +168,29 @@
         <!------------------------------>
         <!-- STAY CONNECTED WITH ME -->
         <div class="connected ">
-            <h1>
+            <h2>
                 STAY CONNECTED WITH ME & THE TROOPS
-            </h1>
+            </h2>
             <div class="line "></div>
 
             <div class="social ">
                 <div class="circle ">
-                    <img class="item " src="images/social/youtube.svg" alt="">
-                    <img class="item" src="images/social/discord.svg " alt=" ">
-                    <img class="item " src="images/social/facebook.svg" alt="">
-                    <img class="item" src="images/social/instagram.svg " alt=" ">
-                    <img class="doge " src="images/social/doge.png" alt="">
+                    <a class="item" href="https://www.youtube.com/channel/UCQhF4_APYzL4l8m_Th_59Nw" target="_blanc">
+                        <img src="./images/social/youtube.svg" alt="" >
+                    </a>
+                    <a class="item" href="" target="_blanc">
+                        <img src="./images/social/discord.svg " alt=" ">
+                    </a>
+                    <a class="item" href="" target="_blanc">
+                        <img src="./images/social/facebook.svg" alt="">
+                    </a>
+                    <a class="item" href="" target="_blanc">
+                        <img src="./images/social/instagram.svg " alt=" ">
+                    </a>
+                    <a class="doge "  href="" target="_blanc">
+                        <img src="./images/social/doge.png" alt="">
+                    </a>
+                    
                 </div>
             </div>
         </div>
