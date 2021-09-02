@@ -62,7 +62,6 @@
 
 .alert {
     align-items: center;
-    width: 98%;
     padding: 15px;
     border: 1px solid transparent;
     border-radius: 0px;
@@ -101,9 +100,12 @@
 }
 
 .alert-success {
+    margin: auto;
+    width: 95%;
     position: absolute;
     top: 10px;
     right: 10px;
+    left: 10px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -114,12 +116,15 @@
 
 .alert-danger
 {
+    margin: auto;
+    width: 95%;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     position: absolute;
     top: 10px;
     right: 10px;
+    left: 10px;
     background-color: #f2dede;
     border-color: #ebccd1;
     color: #a94442;
