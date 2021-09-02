@@ -42,13 +42,13 @@
             <p>CREATED BY  <a href="" class="footer-link"><b>2 KINGS WEBSITES</b></a> | Copyright 2021 reserved to <b>Trader Toks.</b></p>
             <div class="socials">
                 <a href="" target="_blanc">
-                    <img src="./images/social/discorddark.svg">
+                    <img src="./images/social/Discorddark.svg">
                 </a>
                 <a href="" target="_blanc">
                     <img src="./images/social/IG.svg">
                 </a>
                 <a href="" target="_blanc">
-                    <img src="./images/social/YouTubedrk.svg">
+                    <img src="./images/social/YouTubeDrk.svg">
                 </a>
                 <a href="" target="_blanc">
                     <img src="./images/social/FB.svg">
