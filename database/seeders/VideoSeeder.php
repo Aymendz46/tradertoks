@@ -14,8 +14,9 @@ class VideoSeeder extends Seeder
      */
     public function run()
     {
+        $first_course_id = Course::first()->id;
         DB::table('videos')->insert([
-            'course_id' => 1,
+            'course_id' => $first_course_id,
             'title' => 'video 1',
             'episode' => '1',
             'duration' => '3:40 min',
@@ -25,7 +26,7 @@ class VideoSeeder extends Seeder
         ]);
 
         DB::table('videos')->insert([
-            'course_id' => 1,
+            'course_id' => $first_course_id,
             'title' => 'video 2',
             'episode' => '2',
             'duration' => '10:40 min',
@@ -35,7 +36,7 @@ class VideoSeeder extends Seeder
         ]);
 
         DB::table('videos')->insert([
-            'course_id' => 1,
+            'course_id' => $first_course_id,
             'title' => 'video 3',
             'episode' => '3',
             'duration' => '8:40 min',
@@ -45,7 +46,7 @@ class VideoSeeder extends Seeder
         ]);
 
         DB::table('videos')->insert([
-            'course_id' => 1,
+            'course_id' => $first_course_id,
             'title' => 'video 4',
             'episode' => '4',
             'duration' => '1:40 min',
