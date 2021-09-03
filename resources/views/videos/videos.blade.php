@@ -18,7 +18,7 @@
             <!-- Video player -->
             <div class="left">
                 <h3>
-                    The MW Academy - Ep 1
+                    The MW Academy - Ep 2
                 </h3>
 
                 <div class="video">
@@ -50,7 +50,7 @@
                                 </div>
                                 <div class="detail">
                                     <div class="title">
-                                        Lorem ipsum dolor sit
+                                        The MW Academy - Ep 1 
                                     </div>
                                     <div class="duration">
                                         <img src="images/components/duration.svg" alt="">
@@ -74,7 +74,7 @@
                                 </div>
                                 <div class="detail">
                                     <div class="title">
-                                        Lorem ipsum dolor sit
+                                        The MW Academy - Ep 2
                                     </div>
                                     <div class="duration">
                                         <img src="images/components/duration.svg" alt="">
@@ -98,7 +98,7 @@
                                 </div>
                                 <div class="detail fixed">
                                     <div class="title">
-                                        Lorem ipsum dolor sit
+                                        The MW Academy - Ep 3
                                     </div>
                                     <div class="duration">
                                         <img src="images/components/duration.svg" alt="">
@@ -117,7 +117,7 @@
                                 </div>
                                 <div class="detail fixed">
                                     <div class="title">
-                                        Lorem ipsum dolor sit
+                                        The MW Academy - Ep 4
                                     </div>
                                     <div class="duration">
                                         <img src="images/components/duration.svg" alt="">
@@ -136,7 +136,7 @@
                                 </div>
                                 <div class="detail fixed">
                                     <div class="title">
-                                        Lorem ipsum dolor sit
+                                        The MW Academy - Ep 5
                                     </div>
                                     <div class="duration">
                                         <img src="images/components/duration.svg" alt="">
@@ -166,7 +166,7 @@
                 <!-------------------------->
                 <!-- Overview -->
                 <div class="overview show">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque facere ab, similique voluptate assumenda culpa debitis ut, rem libero, laborum perferendis sapiente maxime minus. Quia ea eligendi eveniet ducimus aliquam?</p>
+                    <p>Lorem ipsum amet consectetur adipisicing elit. Eaque facere ab, similique voluptate assumenda culpa debitis ut, rem libero, laborum perferendis sapiente maxime minus. Quia ea eligendi eveniet ducimus aliquam?</p>
                 </div>
                 <!-------------------------->
                 <!-- Q n A -->
