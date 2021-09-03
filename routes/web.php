@@ -26,7 +26,7 @@ Route::get('/course', [CourseController::class, 'index'])->name('course');
 Route::get('/about', [AboutController::class, 'index'])->name('about');
 Route::get('/contact-me', [ContactController::class, 'index'])->name('contact');
 
-Route::middleware(['auth', 'purchase'])->group( function(){
+Route::middleware(['purchase'])->group( function(){
     Route::get('/purchase', [PaymentController::class, 'index'])->name('purchase');
     Route::post('/stripe', [PaymentController::class, 'stripe'])->name('stripe');
 }); 
