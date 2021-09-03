@@ -361,7 +361,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3em 10%;
+    margin: 0 10% 3em 10%;
 }
 
 .vids .container .second h2 {
@@ -591,12 +591,12 @@ body {
 }
 
 .course .cta-div p {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
+    font-weight: bolder;
+    font-size: 48px;
     letter-spacing: -0.02em;
+    text-align: center;
     color: #504B4B;
-    padding-bottom: 0.5em;
+    padding: 0 2em 1em 2em;
 }
 
 .course .cta-div .green {
@@ -622,7 +622,7 @@ body {
     background: #504B4B;
     border: none;
     text-align: center;
-    padding: 1rem;
+    padding: 1.4rem;
     text-decoration: none;
 }
 
@@ -911,7 +911,7 @@ body {
     }
     .course .cta-btn {
         width: 80%;
-        height: 64px;
+        /*height: 64px;*/
         font-size: 16px;
     }
     /*---- Vids ------*/
@@ -957,7 +957,7 @@ body {
         display: none;
     }
     .vids .discover {
-        padding: 0;
+        padding: 2em 0 2em 0;
     }
     .vids .discover h1 {
         font-size: 48px;

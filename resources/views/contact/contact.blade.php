@@ -8,7 +8,9 @@
 <title>Trader Toks | Contact Me</title>
 @endsection
 @section('content')
-<div class="background">
+
+<div style="height: 100vh;">
+    <div class="background">
     <img src="images/logo/Logo0.2.svg">
     <img src="images/logo/Logo0.2.svg">
     <img src="images/logo/Logo0.2.svg">
@@ -46,4 +48,6 @@
                 </div>
             </div>              
         </div>
+</div>
+
 @endsection

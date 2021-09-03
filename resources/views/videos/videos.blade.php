@@ -18,11 +18,12 @@
             <!-- Video player -->
             <div class="left">
                 <h3>
-                    Video title
+                    The MW Academy - Ep 1
                 </h3>
+
                 <div class="video">
-                    Video
-                    <img class="play-btn" src="images/components/play_btn.svg" alt="">
+                    <div style="height: 100%; position:relative;"><iframe src="https://player.vimeo.com/video/582028664?h=eece6d507b&color=44A36F&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                    <!--img class="play-btn" src="images/components/play_btn.svg" alt=""-->
                 </div>
             </div>
             <!-------------------------->
@@ -32,10 +33,10 @@
                 <div class="videos-section">
                     <div class="top">
                         <h5>
-                            Course title
+                            The MW Academy
                         </h5>
                         <p>
-                            level
+                            Cheems - Beginner
                         </p>
                     </div>
                     <!-------------------------->

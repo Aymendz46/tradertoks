@@ -234,9 +234,9 @@ main {
 }
 
 main h3 {
-    font-weight: normal;
-    font-size: 25px;
-    color: #000000;
+    font-weight: bold;
+    font-size: 28px;
+    color: #504b4b;
     margin-bottom: 1rem;
     padding-left: 2rem;
 }
@@ -252,7 +252,7 @@ main .left {
 
 main .video {
     position: relative;
-    width: 90%;
+    width: 97%;
     height: 450px;
     background: #504B4B;
     border-radius: 2px;
@@ -797,7 +797,7 @@ footer .end-footer .socials {
     main .left,
     main .right {
         width: 100%;
-        padding: 0 5%;
+        padding: 1.5em 5% 0 5%;
     }
     main {
         padding: 0;
@@ -843,7 +843,7 @@ footer .end-footer .socials {
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
-        margin: 2rem 0;
+        /*margin: 2rem 0;*/
     }
     .description .tabs .tab {
         margin: 0;
