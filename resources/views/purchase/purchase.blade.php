@@ -4,6 +4,10 @@
 <link rel="stylesheet" href="./css/purchase.css">
 @endsection
 
+@section('page-script')
+<script src="./js/loading(fast).js"></script>
+@endsection
+
 @section('page-title')
 <title>Trader Toks | Purchase</title>
 @endsection
@@ -121,6 +125,7 @@
             </div>
         </main>
     </div>
+    @include('layout.logo')
 
     <script>
         $('#valid-until').keypress(function(e) {

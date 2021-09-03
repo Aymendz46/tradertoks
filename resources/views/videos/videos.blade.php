@@ -4,6 +4,10 @@
 <link rel="stylesheet" href="./css/video.css">
 @endsection
 
+@section('page-script')
+<script src="./js/loading(fast).js"></script>
+@endsection
+
 @section('page-title')
 <title>Trader Toks | Course</title>
 @endsection
@@ -255,5 +259,6 @@
             </div>
         </main>
         
+        @include('layout.logo')
 
 @endsection

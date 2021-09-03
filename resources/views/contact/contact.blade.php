@@ -4,6 +4,10 @@
 <link rel="stylesheet" href="./css/contact.css">
 @endsection
 
+@section('page-script')
+<script src="./js/loading(fast).js"></script>
+@endsection
+
 @section('page-title')
 <title>Trader Toks | Contact Me</title>
 @endsection
@@ -49,5 +53,7 @@
             </div>              
         </div>
 </div>
+
+@include('layout.logo')
 
 @endsection

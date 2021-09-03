@@ -4,6 +4,11 @@
 <link rel="stylesheet" href="./css/index.css">
 @endsection
 
+
+@section('page-script')
+<script src="./js/loading.js"></script>
+@endsection
+
 @section('page-title')
 <title>Trader Toks | Homepage</title>
 @endsection

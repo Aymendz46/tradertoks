@@ -4,6 +4,10 @@
 <link rel="stylesheet" href="./css/about.css">
 @endsection
 
+@section('page-script')
+<script src="./js/loading(fast).js"></script>
+@endsection
+
 @section('page-title')
 <title>Trader Toks | About Me</title>
 @endsection
@@ -43,5 +47,7 @@
             </div>
             </div>    
         </div>
+        
+@include('layout.logo')
 
 @endsection
