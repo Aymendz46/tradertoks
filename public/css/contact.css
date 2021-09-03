@@ -207,6 +207,7 @@ textarea {
     color: #504B4C;
     background: transparent;
     font-size: 15px;
+    resize: vertical;
 }
 
 label {
@@ -521,12 +522,9 @@ label {
     .contact .container .mid {
         width: auto;
     }
-
-    .background
-    {
+    .background {
         display: none;
     }
-
     /*---What ----*/
     .what .content {
         display: grid;

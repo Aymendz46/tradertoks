@@ -13,7 +13,7 @@
 @endsection
 @section('content')
 
-<div style="height: 100vh;">
+<div>
     <div class="background">
     <img src="images/logo/Logo0.2.svg">
     <img src="images/logo/Logo0.2.svg">

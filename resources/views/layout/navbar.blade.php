@@ -56,6 +56,12 @@
                     <li><a href="{{ route('about') }}" class="{{ (request()->is('about')) ? 'active' : '' }}">About Me</a></li>
                     <li><a href="{{ route('course') }}" class="{{ (request()->is('course')) ? 'active' : '' }}">Course</a></li>
                     <li><a href="{{ route('contact') }}" class="{{ (request()->is('contact-me')) ? 'active' : '' }}">Contact Me</a></li>
+                    @auth
+                    <li><a href="#" onclick="logout()">Logout</a></li>
+                    @endauth
+                    @guest
+                    <li><a href="#" onclick="login()"">Login</a></li>
+                    @endguest
                 </ul>
             </nav>
         </div>
@@ -82,11 +88,11 @@
                 <h4>Login</h4>
                 <div class="row">
                     <label for="email">Email</label>
-                    <input type="text" name="email">
+                    <input type="text" name="email" required>
                 </div>
                 <div class="row">
                     <label for="password">Password</label>
-                    <input type="password" name="password">
+                    <input type="password" name="password" required>
                 </div>
                 <input id="remember_me" type="checkbox" name="remember" checked hidden>
                 
@@ -104,15 +110,15 @@
                 <h4>Create an account</h4>
                 <div class="row">
                     <label for="name">Name</label>
-                    <input type="text" name="name">
+                    <input type="text" name="name" required>
                 </div>
                 <div class="row">
                     <label for="email">Email</label>
-                    <input type="text" name="email">
+                    <input type="text" name="email" required>
                 </div>
                 <div class="row">
                     <label for="password">Password</label>
-                    <input type="password" name="password">
+                    <input type="password" name="password" required>
                 </div>
                 <input id="remember_me" type="checkbox" name="remember" checked hidden>
                 
