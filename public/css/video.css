@@ -681,6 +681,7 @@ main .videos-list {
     min-height: 100vh;
 }
 
+/*
 footer {
     text-align: center;
     border: 1.8px solid #3B3B3B;
@@ -702,7 +703,7 @@ footer ul a {
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    /* identical to box height */
+    /* identical to box height 
     color: #504B4C;
 }
 
@@ -784,7 +785,7 @@ footer .end-footer .socials {
     height: 24px;
 }
 
-
+--*/
 /*-----------------------------
         MEDIA QUERIES            
 -----------------------------*/
@@ -859,7 +860,7 @@ footer .end-footer .socials {
     .qna .comment-container .vote {
         margin-left: 0;
     }
-    footer .ft-cont ul {
+    /*footer .ft-cont ul {
         display: none;
     }
     footer .mid-footer {
@@ -885,5 +886,5 @@ footer .end-footer .socials {
     }
     footer .end-footer .socials {
         margin-bottom: 1rem;
-    }
+    }*/
 }
