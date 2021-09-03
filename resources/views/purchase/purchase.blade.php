@@ -69,9 +69,17 @@
                         <button id="to-presentation" class="previous-btn">
                             Previous
                         </button>
-                        <button id="to-account" class="continue-btn">
-                            Continue
-                        </button>
+                        @guest
+                            <button id="to-account" class="continue-btn">
+                                Continue
+                            </button>
+                        @endguest
+
+                        @auth
+                            <button id="to-purchase" class="continue-btn">
+                                Continue
+                            </button>
+                        @endauth
                     </div>
                 </div>
             </div>
@@ -282,7 +290,7 @@
                                 submitButton.innerHTML = "Redirecting to Content, Thank you for Choosing the course";
                                // 
                                 setTimeout(function(){ 
-                                    window.location = result.redirect;
+                                   window.location = result.redirect;
                                 }, 500);
 
                             }

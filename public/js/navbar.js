@@ -129,8 +129,8 @@ $(function() {
                     "width": "40%",
                     "background": "#de1616"
                 });
-                $("#register-nav").prop("disabled", false);
-                $("#register-purchase").prop("disabled", false);
+                //$("#register-nav").prop("disabled", false);
+                //$("#register-purchase").prop("disabled", false);
                 break;
 
             case 3:

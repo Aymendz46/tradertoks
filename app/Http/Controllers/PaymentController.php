@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Stripe\Stripe;
+use App\Models\Course;
 use App\Models\Payment;
 use App\Models\Methodpay;
 use Stripe\PaymentIntent;
@@ -43,14 +44,14 @@ class PaymentController extends Controller
     public function stripe(Request $request)
     {
         $method = Methodpay::where('name', 'Stripe')->first()->id;
+
         $payment = new Payment;
         $payment->user_id = Auth()->user()->id;
-        $payment->video_id = 1;
+        $payment->course_id = Course::first()->id;
         $payment->methodpay_id = $method;
 
-        $payment->payment_id = $request->paymentIntent['id'];
+        $payment->payment_intent = $request->paymentIntent['id'];
         $payment->client_secret = $request->paymentIntent['client_secret'];
-        $payment->status = $request->paymentIntent['status'];
         $payment->save();
 
         return response()->json([

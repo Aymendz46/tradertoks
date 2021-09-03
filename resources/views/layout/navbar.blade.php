@@ -105,7 +105,7 @@
             </form>
         </div>
         <div id="register-modal">
-            <form method="POST" action="{{ route('login') }}">
+            <form method="POST" action="{{ route('register') }}">
                 @csrf
                 <h4>Create an account</h4>
                 <div class="row">
@@ -136,7 +136,7 @@
                     <div class="dont">
                         <span onclick="showLogin()">Already have an account !</span>
                     </div>
-                    <button id="register-nav" type="submit" disabled>Register</button>
+                    <button id="register-nav" type="submit">Register</button>
                 </div>
             </form>
         </div>

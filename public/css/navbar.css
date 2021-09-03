@@ -288,6 +288,10 @@ nav.inactive {
 
 /*----- password strenght -----*/
 
+#login-register-container .row {
+    width: 100%;
+}
+
 #register-nav:disabled,
 #register-purchase:disabled {
     background: #c6c6c6;
