@@ -28,6 +28,8 @@ class ContactMail extends Mailable
      */
     public function build()
     {
-        return $this->view('view.name');
+        return $this->markdown('contactlayout.mail')
+                    ->from(request('email'))
+                    ->subject(request('subject'));
     }
 }

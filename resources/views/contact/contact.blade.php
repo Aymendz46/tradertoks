@@ -32,7 +32,7 @@
                     <div class="row">
                         <div class="input-group">
                             <label for="name">Name:</label>
-                            <input type="text" name="name" placeholder="Your name" required>
+                            <input type="text" name="name" placeholder="Your full name" required>
                         </div>
                         <div class="input-group">    
                             <label for="email">Email:</label>
@@ -47,7 +47,7 @@
                             <label for="message">Message:</label>
                             <textarea name="message" placeholder="Write your message!" required></textarea>
                         </div>
-                        <button type="submit" href="#" class="btn">Send it my way!</button>
+                        <button type="submit" class="btn">Send it my way!</button>
                     </form>
                 </div>
             </div>              
