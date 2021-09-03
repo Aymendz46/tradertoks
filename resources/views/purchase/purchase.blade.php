@@ -236,10 +236,10 @@
             // on the <form> element, you can retrieve it here by calling `form.dataset.secret`
             stripe.confirmCardPayment("{{ $stripeClient}}", {
                 payment_method: {
-                card: card,
-                billing_details: {
-                    name: 'Jervi'
-                }
+                    card: card,
+                    billing_details: {
+                        name: 'Jervi'
+                    }
                 }
             }).then(function(result) {
                 if (result.error) {
@@ -272,7 +272,7 @@
                                 paymentIntent: paymentIntent,
                             },
                             success: function(result){
-                                console.log(result);
+                                window.location = result.redirect;
                             }
                     });
 

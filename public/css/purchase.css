@@ -533,6 +533,17 @@ main {
     justify-content: space-between;
 }
 
+.purchase #card-element {
+    padding: 1rem;
+    border: 2px solid #504B4C;
+    border-radius: 0rem;
+}
+
+.purchase #card-errors {
+    text-align: center;
+    color: #fa755a;
+}
+
 .line-end {
     display: flex;
     flex-direction: column;
@@ -626,7 +637,7 @@ main {
 }
 
 .purchase .credit-submit {
-    margin-top: 1rem;
+    margin-top: 0;
 }
 
 .purchase .credit-submit button.wait {

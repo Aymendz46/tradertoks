@@ -53,7 +53,9 @@ class PaymentController extends Controller
         $payment->status = $request->paymentIntent['status'];
         $payment->save();
 
-        dd($payment);
+        return response()->json([
+            'redirect' => '/videos',
+        ]);
     }
     
 }

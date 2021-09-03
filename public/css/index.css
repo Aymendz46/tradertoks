@@ -518,7 +518,7 @@ body {
 
 .course .container .card {
     display: grid;
-    margin: 0 2em;
+    /*margin: 0 2em;*/
     width: 370px;
 }
 
@@ -866,7 +866,7 @@ body {
         padding: 2em;
         justify-content: unset;
         align-items: center;
-        overflow-y: auto;
+        /*overflow-y: auto;*/
     }
     .course .card .course p {
         padding: 0;
