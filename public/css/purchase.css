@@ -2,13 +2,19 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
-* {
+html {
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
     margin: 0;
 }
 
 body {
-    font-family: "Poppins", sans-serif;
     background-color: #FBFBFB;
 }
 
@@ -661,6 +667,14 @@ main {
     font-size: 17px;
     color: #ffffff;
     width: 100%;
+}
+
+.purchase-toggle-password {
+    cursor: pointer;
+    font-size: 15px;
+    position: absolute;
+    top: 29px;
+    right: 13px;
 }
 
 @keyframes bounce {

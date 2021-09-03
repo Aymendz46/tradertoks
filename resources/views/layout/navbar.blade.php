@@ -123,12 +123,12 @@
                           <div class="form-group">
                             <label for="password">Password</label>
                             <input type="password" data-strength class="form-control input-lg" name="password" >
-                            <i class="toggle-password fa fa-eye" ></i>
+                            <i class="toggle-password fa fa-eye fa-eye-slash" ></i>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                </div>
 
                 <input id="remember_me" type="checkbox" name="remember" checked hidden>
                 
@@ -141,5 +141,18 @@
             </form>
         </div>
     </div>
+
+    <script>
+            
+    $(".toggle-password").click(function() {
+        $(this).toggleClass("fa-eye-slash");
+        input = $(this).parent().find("input");
+        if (input.attr("type") == "password") {
+            input.attr("type", "text");
+        } else {
+            input.attr("type", "password");
+        }
+    });
+    </script>
     
     

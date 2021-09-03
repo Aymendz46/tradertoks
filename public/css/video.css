@@ -17,7 +17,6 @@ html {
 *::before {
     box-sizing: inherit;
     margin: 0;
-    font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -681,6 +680,7 @@ main .videos-list {
     min-height: 100vh;
 }
 
+
 /*
 footer {
     text-align: center;
@@ -786,6 +786,8 @@ footer .end-footer .socials {
 }
 
 --*/
+
+
 /*-----------------------------
         MEDIA QUERIES            
 -----------------------------*/
