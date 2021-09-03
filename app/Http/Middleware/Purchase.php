@@ -17,14 +17,20 @@ class Purchase
      */
     public function handle(Request $request, Closure $next)
     {
-        if(Auth()->user()->payments()->first() == null)
+        if(Auth()->user())
         {
-            return $next($request); 
+            if(Auth()->user()->payments()->first() == null)
+            {
+                return $next($request); 
+            }
+            else 
+            {
+                return redirect('/videos');
+            }
         }
-        else 
-        {
-            return redirect('/videos');
+        else {
+            return $next($request);
         }
-        return $next($request);
+        
     }
 }
