@@ -284,6 +284,51 @@ nav.inactive {
     transition: 0.5s;
 }
 
+
+/*----- password strenght -----*/
+
+#register-nav:disabled,
+#register-purchase:disabled {
+    background: #c6c6c6;
+    filter: blur(2px);
+}
+
+.toggle-password {
+    cursor: pointer;
+    font-size: 15px;
+    position: absolute;
+    top: 29px;
+    right: 13px;
+}
+
+.form {
+    position: relative;
+}
+
+.form .strength {
+    height: 8px;
+    width: 100%;
+    background: #ccc;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    overflow: hidden;
+    transition: height 0.3s;
+}
+
+.form .strength span {
+    width: 0px;
+    height: 15px;
+    display: block;
+    transition: width 0.3s;
+}
+
+.form-group label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5px;
+}
+
 @media only screen and (max-width: 769px) {
     nav li a.active {
         text-decoration: underline;

@@ -92,15 +92,34 @@
                             <label for="email">Email</label>
                             <input name="email" type="text" required>
                         </div>
-                        <div class="row">
-                            <label for="password">Password</label>
-                            <input name="password" type="password" required>
+                        <div class="container">
+                            <div class="row">
+                              <div class="form">
+                                <div class="form-group">
+                                    
+                                    <label for="password">Password </label>
+                                    <input type="password" data-strength class="form-control input-lg" name="password" >
+                                    <i class="toggle-password fa fa-eye" ></i>
+                                </div>
+                              </div>
+                            </div>
                         </div>
+                        <script>
+                            $(".toggle-password").click(function() {
+                                $(this).toggleClass("fa-eye-slash");
+                                input = $(this).parent().find("input");
+                                if (input.attr("type") == "password") {
+                                    input.attr("type", "text");
+                                } else {
+                                    input.attr("type", "password");
+                                }
+                            });
+                        </script>
                         <div class="buttom-row">
                             <div class="log">
                                 <span  id="to-login">Already have an account!</span>
                             </div>
-                            <button type="submit">Create Account</button>
+                            <button id="register-purchase" type="submit" disabled>Create Account</button>
                         </div>
                     </form>
                 </div>

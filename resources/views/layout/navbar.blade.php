@@ -116,17 +116,27 @@
                     <label for="email">Email</label>
                     <input type="text" name="email" required>
                 </div>
-                <div class="row">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" required>
-                </div>
+                <div class="container">
+                    <div class="row">
+                      <div class="form">
+                        <div class="col-sm-12 col-md-8 col-md-offset-2">
+                          <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" data-strength class="form-control input-lg" name="password" >
+                            <i class="toggle-password fa fa-eye" ></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                 <input id="remember_me" type="checkbox" name="remember" checked hidden>
                 
                 <div class="row-btn">
                     <div class="dont">
                         <span onclick="showLogin()">Already have an account !</span>
                     </div>
-                    <button type="submit">Register</button>
+                    <button id="register-nav" type="submit" disabled>Register</button>
                 </div>
             </form>
         </div>
