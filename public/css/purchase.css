@@ -434,6 +434,15 @@ main {
     padding-top: 5%;
 }
 
+.purchase .ask-log {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.purchase .ask-log button {
+    margin-top: 2rem;
+}
+
 
 /*------ left -------*/
 
@@ -506,8 +515,7 @@ main {
 }
 
 .purchase .credit {
-    display: flex;
-    flex-wrap: wrap;
+    margin: 2rem 0;
 }
 
 .purchase .credit .line,
@@ -597,7 +605,6 @@ main {
 /*--- button ---*/
 
 .purchase button {
-    margin-top: 1rem;
     background: #504B4C;
     border: 2px solid #504B4C;
     font-family: Poppins;
@@ -607,7 +614,7 @@ main {
     align-items: center;
     color: #EDEEEE;
     padding: 0.8em 2em;
-    margin-left: auto;
+    width: 100%;
 }
 
 .purchase button:hover {
@@ -616,6 +623,139 @@ main {
     color: #242424;
     border: 2px solid #c0c0c0;
     transition: 0.5s;
+}
+
+.purchase .credit-submit {
+    margin-top: 1rem;
+}
+
+.purchase .credit-submit button.wait {
+    display: flex;
+    animation: bounce 1s infinite;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    padding: 0;
+    margin: auto;
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+        height: 40px;
+    }
+    40% {
+        transform: translateY(-30px);
+        height: 48px;
+    }
+    60% {
+        transform: translateY(-15px);
+        height: 48px;
+    }
+}
+
+
+/*--------------------
+        create account
+--------------------*/
+
+.account {
+    width: 35%;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.account h3 {
+    color: #000000;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.account p {
+    color: #000000;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #504B4C;
+}
+
+.account form {
+    margin-top: 1rem;
+}
+
+.account .row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.account label {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #504B4C;
+}
+
+.account input {
+    width: 100%;
+    height: 40px;
+    border: 2px solid #504B4C;
+    box-sizing: border-box;
+}
+
+.account .buttom-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.account .buttom-row span {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #000000;
+    text-decoration: underline;
+}
+
+.account .buttom-row span:hover {
+    cursor: pointer;
+}
+
+.account .buttom-row button {
+    width: 163.9px;
+    background: #504B4C;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #EDEEEE;
+}
+
+.account .buttom-row button:hover {
+    cursor: pointer;
+    background: #EDEEEE;
+    color: #252324;
+    transition: 0.5s;
+}
+
+#login,
+#register {
+    display: none;
+}
+
+#login.show,
+#register.show {
+    display: block;
 }
 
 
@@ -630,7 +770,8 @@ main {
 
 .presentation,
 .details,
-.purchase {
+.purchase,
+.account {
     display: none;
     padding: 0 10% 5% 10%;
 }
@@ -641,6 +782,13 @@ main {
     transition: all 0.5s ease;
     animation: opacity 0.5s;
     padding: 0 10% 5% 10%;
+}
+
+.account.show {
+    display: block;
+    transition: all 0.5s ease;
+    animation: opacity 0.5s;
+    padding: 0;
 }
 
 .purchase.show {
@@ -662,11 +810,6 @@ main {
         transform: translateX(-0);
     }
 }
-
-
-/*--------------------
-        Recoureces
---------------------*/
 
 
 /*--------------------
@@ -867,6 +1010,12 @@ footer .end-footer .socials {
     }
     .details .bottom ol li {
         font-size: 10px;
+    }
+    /*----accoutn----*/
+    .account {
+        margin-top: 2rem;
+        width: 100%;
+        margin-bottom: 5rem;
     }
     /*----Purchase----*/
     .presentation .video {

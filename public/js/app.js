@@ -1,1 +1,6 @@
-require('./bootstrap');
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	
+/******/ 	
+/******/ })()
+;

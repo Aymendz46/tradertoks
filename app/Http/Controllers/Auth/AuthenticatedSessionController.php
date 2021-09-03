@@ -28,10 +28,18 @@ class AuthenticatedSessionController extends Controller
      */
     public function store(LoginRequest $request)
     {
+        //get where request came from
+        $source = $request->header('referer');
+
         $request->authenticate();
 
         $request->session()->regenerate();
 
+        if(strpos($source, 'purchase') != false)
+        {
+            return redirect()->route('purchase', ['source' => 'purchase']);
+        }
+        
         return redirect()->intended(RouteServiceProvider::HOME);
     }
 

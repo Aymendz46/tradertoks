@@ -33,7 +33,11 @@ class RegisteredUserController extends Controller
      * @throws \Illuminate\Validation\ValidationException
      */
     public function store(Request $request)
-    {
+    {   
+        //get where request came from
+        $source = $request->header('referer');
+
+        //get student role
         $role_student = Role::where('name', 'student')->first()->id;
         
         $request->validate([
@@ -53,6 +57,10 @@ class RegisteredUserController extends Controller
 
         Auth::login($user);
 
+        if(strpos($source, 'purchase') != false)
+        {
+            return redirect()->route('purchase', ['source' => 'purchase']);
+        }
         return redirect(RouteServiceProvider::HOME);
     }
 }

@@ -15,6 +15,8 @@ class CreateMethodpaysTable extends Migration
     {
         Schema::create('methodpays', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('link')->nullable(); //maybe an image
             $table->timestamps();
         });
     }
