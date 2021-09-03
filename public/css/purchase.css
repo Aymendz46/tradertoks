@@ -544,6 +544,11 @@ main {
     color: #fa755a;
 }
 
+.purchase #card-wait {
+    text-align: center;
+    color: #78bc3a;
+}
+
 .line-end {
     display: flex;
     flex-direction: column;
@@ -648,6 +653,14 @@ main {
     border-radius: 100%;
     padding: 0;
     margin: auto;
+}
+
+.purchase .credit-submit button.thanks {
+    background: #44a26f;
+    border: 2px solid #31935e;
+    font-size: 17px;
+    color: #ffffff;
+    width: 100%;
 }
 
 @keyframes bounce {

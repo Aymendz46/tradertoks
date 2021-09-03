@@ -15,6 +15,14 @@
 
 @section('content')
 
+    <!-- dots -->
+    <div class="left-dots">
+        <div class="dots active"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+    </div>
 <!------------------------------>
     <!-- MAIN -->
     <div class="main">

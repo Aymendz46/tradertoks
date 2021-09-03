@@ -181,6 +181,7 @@
                         
                         <!-- We'll put the error messages in this element -->
                         <div id="card-errors" role="alert"></div>
+                        <div id="card-wait" role="alert"></div>
                         <div class="credit-submit">
                             <button id="submit-stripe">Submit Payment</button>
                         </div>
@@ -232,13 +233,16 @@
             submitButton.disabled = true;
             submitButton.classList.add('wait');
             submitButton.innerHTML = "";
-            // If the client secret was rendered server-side as a data-secret attribute
-            // on the <form> element, you can retrieve it here by calling `form.dataset.secret`
+
+            //Please wait
+            var waitMessage = document.getElementById('card-wait');
+            waitMessage.textContent = 'Payement in process';
+
             stripe.confirmCardPayment("{{ $stripeClient}}", {
                 payment_method: {
                     card: card,
                     billing_details: {
-                        name: 'Jervi'
+                        name: '{{ Auth()->user()->name }}'
                     }
                 }
             }).then(function(result) {
@@ -272,7 +276,15 @@
                                 paymentIntent: paymentIntent,
                             },
                             success: function(result){
-                                window.location = result.redirect;
+                                submitButton.classList.remove('wait');
+                                submitButton.classList.add('thanks');
+
+                                submitButton.innerHTML = "Redirecting to Content, Thank you for Choosing the course";
+                               // 
+                                setTimeout(function(){ 
+                                    window.location = result.redirect;
+                                }, 500);
+
                             }
                     });
 

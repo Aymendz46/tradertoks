@@ -7,7 +7,7 @@
             <ul class="links">
                 <li><a href="{{ route('home') }}" class="{{ (request()->is('/')) ? 'active' : '' }}">Home</a></li>
                 <li><a href="{{ route('about') }}" class="{{ (request()->is('about')) ? 'active' : '' }}">About Me</a></li>
-                <li><a href="{{ route('course') }}" class="{{ (request()->is('course')) ? 'active' : '' }}">Course</a></li>
+                <li><a href="{{ route('course') }}" class="{{ (request()->is('course')) ? 'active' : '' }}">Purchase</a></li>
                 <li><a href="{{ route('contact') }}" class="{{ (request()->is('contact')) ? 'active' : '' }}">Contact Me</a></li>
                 @auth
                 <li><a href="#" onclick="logout()">Logout</a></li>
@@ -54,7 +54,7 @@
                 <ul>
                     <li><a href="{{ route('home') }}" class="{{ (request()->is('/')) ? 'active' : '' }}">Home</a></li>
                     <li><a href="{{ route('about') }}" class="{{ (request()->is('about')) ? 'active' : '' }}">About Me</a></li>
-                    <li><a href="{{ route('course') }}" class="{{ (request()->is('course')) ? 'active' : '' }}">Course</a></li>
+                    <li><a href="{{ route('course') }}" class="{{ (request()->is('course')) ? 'active' : '' }}">Purchase</a></li>
                     <li><a href="{{ route('contact') }}" class="{{ (request()->is('contact-me')) ? 'active' : '' }}">Contact Me</a></li>
                     @auth
                     <li><a href="#" onclick="logout()">Logout</a></li>

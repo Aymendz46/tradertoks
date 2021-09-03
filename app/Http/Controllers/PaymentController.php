@@ -44,7 +44,7 @@ class PaymentController extends Controller
     {
         $method = Methodpay::where('name', 'Stripe')->first()->id;
         $payment = new Payment;
-        $payment->user_id = 1;
+        $payment->user_id = Auth()->user()->id;
         $payment->video_id = 1;
         $payment->methodpay_id = $method;
 

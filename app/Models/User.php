@@ -4,6 +4,7 @@ namespace App\Models;
 
 use App\Models\Role;
 use App\Models\Video;
+use App\Models\Payment;
 use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -50,7 +51,12 @@ class User extends Authenticatable
         return $this->belongsTo(Role::class);
     }
 
-    public function videos()
+    public function payments()
+    {
+        return $this->hasMany(Payment::class);
+    }
+
+    public function watcheds()
     {
         return $this->belongsToMany(Video::class, 'watcheds', 'user_id', 'video_id');
     }

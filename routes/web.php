@@ -23,15 +23,16 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::post('/',[HomeController::class, 'store']);
 
 Route::get('/course', [CourseController::class, 'index'])->name('course');
-Route::get('/videos', [VideosController::class, 'index'])->name('videos');
 Route::get('/about', [AboutController::class, 'index'])->name('about');
 Route::get('/contact-me', [ContactController::class, 'index'])->name('contact');
-Route::get('/purchase', [PaymentController::class, 'index'])->name('purchase');
 
-Route::post('/stripe', [PaymentController::class, 'stripe'])->name('stripe');
-
+Route::middleware(['auth', 'purchase'])->group( function(){
+    Route::get('/purchase', [PaymentController::class, 'index'])->name('purchase');
+    Route::post('/stripe', [PaymentController::class, 'stripe'])->name('stripe');
+}); 
 
 Route::middleware(['auth', 'student'])->group( function(){
-    //if the user purchased the course, {check the role or its status}
+    Route::get('/videos', [VideosController::class, 'index'])->name('videos');
 });
+
 require __DIR__.'/auth.php';
