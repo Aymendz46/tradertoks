@@ -675,12 +675,13 @@ main .videos-list {
 
 /*--------------------
         Footer
---------------------
+--------------------*/
 
 .mainn {
     min-height: 100vh;
 }
 
+/*
 footer {
     text-align: center;
     border: 1.8px solid #3B3B3B;

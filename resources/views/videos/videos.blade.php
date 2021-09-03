@@ -5,7 +5,7 @@
 @endsection
 
 @section('page-script')
-<script src="./js/loading(fast).js"></script>
+<!--<script src="./js/loading(fast).js"></script>-->
 @endsection
 
 @section('page-title')
@@ -258,7 +258,5 @@
                 </div>
             </div>
         </main>
-        
-        @include('layout.logo')
 
 @endsection
