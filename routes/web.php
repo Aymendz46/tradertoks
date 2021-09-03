@@ -19,10 +19,6 @@ use App\Http\Controllers\PaymentController;
 |
 */
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
-
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::post('/',[HomeController::class, 'store']);
 

@@ -50,10 +50,45 @@ function hideMenuMobile() {
     $('#nav-modal').addClass('hide');
 }
 
-function closeAlert()
-{
+function closeAlert() {
     //const closeBtn = document.getElementsByClassName("close")[4];
     const alertDiv = document.getElementsByClassName("alert")[0];
 
     alertDiv.style.display = "none";
+}
+
+function logout() {
+    $('#overlay').fadeIn();
+    $('#logout-container').fadeIn();
+
+    $('#cancel').click(function() {
+        $('#overlay').fadeOut();
+        $('#logout-container').fadeOut();
+    });
+
+    $('#overlay').click(function() {
+        $('#overlay').fadeOut();
+        $('#logout-container').fadeOut();
+    });
+}
+
+function login() {
+    $('#overlay').fadeIn();
+    $('#login-register-container').fadeIn();
+
+    $('#overlay').click(function() {
+        $('#overlay').fadeOut();
+        $('#login-register-container').fadeOut();
+    });
+}
+
+function showLogin() {
+    $('#register-modal').hide();
+    $('#login-modal').show();
+}
+
+function showRegister() {
+    $('#register-modal').show();
+    $('#login-modal').hide();
+
 }

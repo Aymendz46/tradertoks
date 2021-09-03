@@ -111,6 +111,179 @@ nav.inactive {
     }
 }
 
+#overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 98;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+
+/*---- Logout ----*/
+
+#logout-container {
+    display: none;
+    z-index: 99;
+}
+
+#logout-modal {
+    position: fixed;
+    left: 50%;
+    right: 50%;
+    z-index: 99;
+    transform: translate(-50%, 50%);
+    width: 300px;
+    height: 150px;
+    background: #31363E;
+    border-radius: 14px;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#logout-modal h4 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#logout-modal form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+    margin: auto;
+}
+
+#logout-modal .row-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+#logout-modal .row-btn button {
+    width: 100%;
+    width: 86px;
+    background: #FFFFFF;
+    border: none;
+}
+
+#logout-modal .row-btn button:hover {
+    cursor: pointer;
+}
+
+#logout-modal .row-btn button:hover:nth-child(1) {
+    background-color: rgb(206, 134, 134);
+    color: white;
+    transition: 0.5s;
+}
+
+#logout-modal .row-btn button:hover:nth-child(2) {
+    background-color: rgb(134, 206, 162);
+    color: white;
+    transition: 0.5s;
+}
+
+
+/*---- Login ----*/
+
+#login-register-container {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#login-modal,
+#register-modal {
+    display: none;
+    width: 500px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 26px 50px;
+}
+
+#login-modal.show,
+#register-modal.show {
+    display: block;
+    background: #FFFFFF;
+}
+
+#login-register-container h4 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+#login-register-container .row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+#login-register-container label {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #504B4C;
+}
+
+#login-register-container input {
+    width: 400px;
+    height: 40px;
+    border: 2px solid #504B4C;
+    box-sizing: border-box;
+}
+
+#login-register-container .row-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+#login-register-container .row-btn span {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #000000;
+}
+
+#login-register-container .row-btn span:hover {
+    cursor: pointer;
+}
+
+#login-register-container .row-btn button {
+    width: 163.9px;
+    background: #504B4C;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #EDEEEE;
+}
+
+#login-register-container .row-btn button:hover {
+    cursor: pointer;
+    background: #EDEEEE;
+    color: #504B4C;
+    transition: 0.5s;
+}
+
 @media only screen and (max-width: 769px) {
     nav li a.active {
         text-decoration: underline;
