@@ -3,6 +3,10 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Database\Seeders\CourseSeeder;
+use Database\Seeders\MethodpaySeeder;
+use Database\Seeders\RoleSeeder;
+use Database\Seeders\VideoSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -13,6 +17,15 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        $courses = new CourseSeeder();
+        $methods = new MethodpaySeeder();
+        $roles = new RoleSeeder();
+        $videos = new VideoSeeder();
+
+        $roles->run();
+        $methods->run();
+        $courses->run();
+        $videos->run();
+
     }
 }

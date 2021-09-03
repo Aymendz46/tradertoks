@@ -6,30 +6,21 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateVideosTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
         Schema::create('videos', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('course_id')->constrained('courses');
             $table->string('title');
-            $table->string('order');
+            $table->string('episode');
             $table->string('duration')->nullable();
             $table->string('thumbnail')->nullable();
             $table->longText('description')->nullable();
-            $table->string('link');
+            $table->string('video_link');
             $table->timestamps();
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('videos');

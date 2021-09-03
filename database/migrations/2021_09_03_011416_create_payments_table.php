@@ -16,11 +16,10 @@ class CreatePaymentsTable extends Migration
         Schema::create('payments', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained('users');
-            $table->foreignId('video_id')->constrained('videos');
+            $table->foreignId('course_id')->constrained('courses');
             $table->foreignId('methodpay_id')->constrained('methodpays');
-            $table->string('payment_id');
+            $table->string('payment_intent');
             $table->string('client_secret');
-            $table->string('status')->nullabel();       //must be success, idk if paypal has this attribute
 
             $table->timestamps();
         });

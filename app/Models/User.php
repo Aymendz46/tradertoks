@@ -4,6 +4,7 @@ namespace App\Models;
 
 use App\Models\Role;
 use App\Models\Video;
+use App\Models\Course;
 use App\Models\Payment;
 use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Notifications\Notifiable;
@@ -59,5 +60,10 @@ class User extends Authenticatable
     public function watcheds()
     {
         return $this->belongsToMany(Video::class, 'watcheds', 'user_id', 'video_id');
+    }
+
+    public function courses()
+    {
+        return $this->belongsToMany(Course::class, 'payments', 'user_id', 'course_id');
     }
 }
