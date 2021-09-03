@@ -182,14 +182,12 @@ body {
     color: #b9b7b7;
 }
 
-.newsletter-cont .success
-{
+.newsletter-cont .success {
     font-size: 14px;
     color: #44A26F;
 }
 
-.newsletter-cont .failure
-{
+.newsletter-cont .failure {
     font-size: 14px;
     color: #cf5f5f;
 }
@@ -522,7 +520,6 @@ body {
     display: grid;
     margin: 0 2em;
     width: 370px;
-    height: 350px;
 }
 
 .course .container .card {
@@ -531,8 +528,14 @@ body {
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
+.card .thumbnail {
+    max-height: 300px;
+    display: flex;
+}
+
 .card .thumbnail img {
-    width: 100%;
+    height: 100%;
+    margin: auto;
 }
 
 .card .episode-title {

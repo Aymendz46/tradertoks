@@ -110,7 +110,7 @@
             <!-- card 1 -->
             <div class="card leftt ">
                 <div class="thumbnail ">
-                    <img src="./images/product/chart.svg ">
+                    <img src="./images/product/3-min.png">
                 </div>
                 <div class="episode-title">
                     <p>Candle Sticks - Beginners</p>
@@ -125,25 +125,7 @@
                     <p class="episode-number">Part 1</p>
                 </div>
             </div>
-            <!-- card 2 -->
-            <div class="card rightt ">
-                <div class="thumbnail ">
-                    <img src="./images/product/chart.svg ">
-                </div>
-                <div class="episode-title">
-                    <p>Candle Sticks - Intermediate</p>
-
-                </div>
-                <div class="course description ">
-                    <p>In this episode, you will learn how to read candle sticks and the different types, etc etc.</p>
-                </div>
-                <div class="difficulty ">
-                    <div class="level">
-                        <p>Difficulty level:</p><img src="./images/course/stronkDoge.svg">
-                    </div>   
-                    <p class="episode-number">Part 2</p>
-                </div>
-            </div>
+            
         </div>
             <div class="cta-div ">
                 <p>
