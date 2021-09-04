@@ -145,6 +145,7 @@ body {
     height: 214.47px;
     transform: rotate(-14.13deg);
     animation: float1 30s ease-in infinite;
+    animation-delay: 0s;
 }
 
 @keyframes float1 {
@@ -174,6 +175,7 @@ body {
     height: 113.13px;
     transform: rotate(5.09deg);
     animation: float2 15s ease-in infinite;
+    animation-delay: 1s;
 }
 
 @keyframes float2 {
@@ -201,8 +203,9 @@ body {
     bottom: 1%;
     width: 53.31px;
     height: 113.13px;
-    transform: rotate(-47deg);
+    transform: rotate(-147deg);
     animation: float3 15s ease-in infinite;
+    animation-delay: 3s;
 }
 
 @keyframes float3 {
@@ -231,10 +234,11 @@ body {
     width: 93.31px;
     height: 113.13px;
     transform: rotate(5.09deg);
-    animation: float3 15s ease-in infinite;
+    animation: float4 15s ease-in infinite;
+    animation-delay: 5s;
 }
 
-@keyframes float3 {
+@keyframes float4 {
     0% {
         transform: rotate(5.09deg) translate(0px, 0px);
     }
