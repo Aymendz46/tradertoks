@@ -6,6 +6,7 @@
 
 @section('page-script')
 <!--<script src="./js/loading(fast).js"></script>-->
+<meta name="csrf-token" content="{{ csrf_token() }}">
 @endsection
 
 @section('page-title')
@@ -48,13 +49,19 @@
                     <div class="bottom">
                         <!-------------------------->
                         <ul class="videos-list">
-                            
+                            <?php
+                                $user = Auth()->user();
+                            ?>   
                             @foreach ($videos as $video)
+                            <?php
+                                $watched = $user->watched->where('id', $video->id)->count();
+                            ?>
                             <!-- not Played -->
-                            <li class="item" data-status="notPlayed" data-order="{{ $loop->index }}">
+                            <li class="item" data-status="{{ $watched == 0 ? 'notPlayed' : 'played' }}" data-order="{{ $loop->index }}">
                                 <input type="hidden" class="video-link" value="{{ $video->video_link }}">
+                                <input type="hidden" class="video-id" value="{{ $video->id }}">
                                 <div class="check">
-                                    <img class="state-icon" src="images/components/not_played.svg" alt="">
+                                    <img class="state-icon" src="images/components/{{ $watched == 0 ? 'not_played' : 'played' }}.svg" alt="">
                                 </div>
                                 <div class="detail fixed">
                                     <div class="title">
@@ -67,9 +74,15 @@
                                             <span>min</span>
                                         </p>
                                     </div>
-                                    <div class="state">
-                                        
+                                    @if($watched != 0)
+                                    <div class="state completed">
+                                        <span>viewed</span>
                                     </div>
+                                    @else
+                                    <div class="state">
+                                    </div>
+                                    @endif
+                                    
                                 </div>
                             </li>
                             @endforeach
@@ -97,19 +110,41 @@
                                         $(this).find(".state").html('<span>playing</span>');
                                     }
 
+                                    //make the visited completed
                                     itemRefresh($(this).attr('data-order'));
+                                    //save what student have seen, they must watch the course more then half 
+                                    sendAjax($(this).find('.video-id').val());
+
                                 });
 
                                 function itemRefresh(active) {
                                     $('.item').each(function() {
                                         if($(this).attr('data-order') != active) {
                                             if($(this).attr('data-status') == 'played') {
-                                                console.log($(this).attr('data-order'));
                                                 $(this).removeClass('active');
                                                 $(this).find(".state").removeClass('playing');
                                                 $(this).find(".state").addClass('completed');
                                                 $(this).find(".state").html('<span>viewed</span>')
                                             }
+                                        }
+                                    });
+                                }
+
+                                function sendAjax(number) {
+                                    $.ajaxSetup({
+                                        headers: {
+                                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                                        }
+                                    });
+
+                                    jQuery.ajax({
+                                        url: "{{ route('watched') }}",
+                                        method: 'post',
+                                        data: {
+                                            video_id: number,
+                                        },
+                                        success: function(result){
+                                            console.log(result);
                                         }
                                     });
                                 }

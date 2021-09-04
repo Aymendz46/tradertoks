@@ -13,7 +13,7 @@ class Video extends Model
 
     public function users()
     {
-        return $this->belongsToMany(User::class, 'watcheds', 'video_id', 'user_id');
+        return $this->belongsToMany(User::class, 'watcheds');
     }
 
     public function course()

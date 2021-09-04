@@ -7,6 +7,7 @@ use App\Http\Controllers\CourseController;
 use App\Http\Controllers\VideosController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\VideoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,6 +34,7 @@ Route::middleware(['purchase'])->group( function(){
 
 Route::middleware(['auth', 'student'])->group( function(){
     Route::get('/videos', [VideosController::class, 'index'])->name('videos');
+    Route::post('/watched', [VideosController::class, 'watched'])->name('watched');
 });
 
 require __DIR__.'/auth.php';
