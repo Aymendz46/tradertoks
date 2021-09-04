@@ -107,7 +107,7 @@
                                     
                                     <label for="password">Password </label>
                                     <input type="password" data-strength class="form-control input-lg" name="password" >
-                                    <i class="purchase-toggle-password fa fa-eye fa-eye-slash" ></i>
+                                    <i class="purchase-toggle-password fa fa-eye" ></i>
                                 </div>
                               </div>
                             </div>

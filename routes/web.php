@@ -36,3 +36,8 @@ Route::middleware(['auth', 'student'])->group( function(){
 });
 
 require __DIR__.'/auth.php';
+
+
+Route::get('{any}', function() {
+    return redirect('/');
+ })->where('any', '.*');

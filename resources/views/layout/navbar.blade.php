@@ -123,7 +123,7 @@
                           <div class="form-group">
                             <label for="password">Password</label>
                             <input type="password" data-strength class="form-control input-lg" name="password" >
-                            <i class="toggle-password fa fa-eye fa-eye-slash" ></i>
+                            <i class="toggle-password fa fa-eye" ></i>
                           </div>
                         </div>
                       </div>
