@@ -13,8 +13,7 @@
 @endsection
 @section('content')
 
-<div>
-    <div class="background">
+<div class="background">
     <img src="images/logo/Logo0.2.svg">
     <img src="images/logo/Logo0.2.svg">
     <img src="images/logo/Logo0.2.svg">

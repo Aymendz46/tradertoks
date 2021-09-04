@@ -107,10 +107,6 @@ body {
     background: #504B4B;
 }
 
-img {
-    display: block;
-}
-
 
 /*--------------------
         contact
@@ -148,6 +144,25 @@ img {
     width: 176.9px;
     height: 214.47px;
     transform: rotate(-14.13deg);
+    animation: float1 30s ease-in infinite;
+}
+
+@keyframes float1 {
+    0% {
+        transform: rotate(-14.13deg) translate(0px, 0px);
+    }
+    25% {
+        transform: rotate(-14.13deg) translate(-20px, -20px);
+    }
+    50% {
+        transform: rotate(-14.13deg) translate(-12px, -12px);
+    }
+    75% {
+        transform: rotate(-14.13deg) translate(-20px, -20px);
+    }
+    100% {
+        transform: rotate(-14.13deg) translate(0px, 0px);
+    }
 }
 
 .background img:nth-of-type(2) {
@@ -158,6 +173,25 @@ img {
     width: 93.31px;
     height: 113.13px;
     transform: rotate(5.09deg);
+    animation: float2 15s ease-in infinite;
+}
+
+@keyframes float2 {
+    0% {
+        transform: rotate(5.09deg) translate(0px, 0px);
+    }
+    25% {
+        transform: rotate(5.09deg) translate(-10px, -10px);
+    }
+    50% {
+        transform: rotate(5.09deg) translate(-9px, -30px);
+    }
+    75% {
+        transform: rotate(5.09deg) translate(-10px, -10px);
+    }
+    100% {
+        transform: rotate(5.09deg) translate(0px, 0px);
+    }
 }
 
 .background img:nth-of-type(3) {
@@ -167,7 +201,26 @@ img {
     bottom: 1%;
     width: 53.31px;
     height: 113.13px;
-    transform: rotate(47deg);
+    transform: rotate(-47deg);
+    animation: float3 15s ease-in infinite;
+}
+
+@keyframes float3 {
+    0% {
+        transform: rotate(-147deg) translate(0px, 0px);
+    }
+    25% {
+        transform: rotate(-147deg) translate(-10px, -10px);
+    }
+    50% {
+        transform: rotate(-147deg) translate(-9px, -30px);
+    }
+    75% {
+        transform: rotate(-147deg) translate(-10px, -10px);
+    }
+    100% {
+        transform: rotate(-147deg) translate(0px, 0px);
+    }
 }
 
 .background img:nth-of-type(4) {
@@ -178,6 +231,25 @@ img {
     width: 93.31px;
     height: 113.13px;
     transform: rotate(5.09deg);
+    animation: float3 15s ease-in infinite;
+}
+
+@keyframes float3 {
+    0% {
+        transform: rotate(5.09deg) translate(0px, 0px);
+    }
+    25% {
+        transform: rotate(5.09deg) translate(-15px, -15px);
+    }
+    50% {
+        transform: rotate(5.09deg) translate(-9px, -30px);
+    }
+    75% {
+        transform: rotate(5.09deg) translate(-15px, -15px);
+    }
+    100% {
+        transform: rotate(5.09deg) translate(0px, 0px);
+    }
 }
 
 .contact .container .mid {
