@@ -333,7 +333,7 @@ main .videos-list {
 .videos-list .item {
     margin: auto;
     width: 80%;
-    height: 80px;
+    /*height: 80px;*/
     left: 1005px;
     top: 245px;
     background: rgba(223, 220, 209, 0.35);
@@ -389,6 +389,7 @@ main .videos-list {
 
 .videos-list .item {
     display: flex;
+    padding-top: 8px;
 }
 
 .item .check {
@@ -412,7 +413,7 @@ main .videos-list {
 
 .item .detail .state {
     margin-left: auto;
-    transform: translateY(8px);
+    /*transform: translateY(8px);*/
 }
 
 .item .detail .title {

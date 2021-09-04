@@ -30,6 +30,7 @@
                     <!--img class="play-btn" src="images/components/play_btn.svg" alt=""-->
                 </div>
             </div>
+
             <!-------------------------->
             <!-- Video list -->
             <div class="right">
@@ -47,14 +48,17 @@
                     <div class="bottom">
                         <!-------------------------->
                         <ul class="videos-list">
-                            <!-- Played -->
-                            <li class="item">
+                            
+                            @foreach ($videos as $video)
+                            <!-- not Played -->
+                            <li class="item" data-status="notPlayed" data-order="{{ $loop->index }}">
+                                <input type="hidden" class="video-link" value="{{ $video->video_link }}">
                                 <div class="check">
-                                    <img src="images/components/played.svg" alt="">
+                                    <img class="state-icon" src="images/components/not_played.svg" alt="">
                                 </div>
-                                <div class="detail">
+                                <div class="detail fixed">
                                     <div class="title">
-                                        The MW Academy - Ep 1 
+                                        {{ $video->title }} 
                                     </div>
                                     <div class="duration">
                                         <img src="images/components/duration.svg" alt="">
@@ -63,14 +67,53 @@
                                             <span>min</span>
                                         </p>
                                     </div>
-                                    <div class="state completed">
-                                        <span>
-                                            Completed
-                                        </span>
+                                    <div class="state">
+                                        
                                     </div>
                                 </div>
                             </li>
+                            @endforeach
+                            <script>
+                                $(".item").click(function() {
+                                    //check if video is playing
+                                    if(!$(this).hasClass('active')) {
 
+                                        //sign on the item as played
+                                        $(this).data("status", "played");
+                                        $(this).attr("data-status", "played");
+
+                                        //get the link and inject it
+                                        var link = $(this).find(".video-link").val();
+                                        $("iframe").attr("src", link);
+
+                                        //change style to playing
+                                        $(this).addClass('active');
+
+                                        //change state-icon img to playing
+                                        $(this).find(".state-icon").attr("src", 'images/components/playing.svg');
+
+                                        //change state-btn to playing
+                                        $(this).find(".state").addClass('playing');
+                                        $(this).find(".state").html('<span>playing</span>');
+                                    }
+
+                                    itemRefresh($(this).attr('data-order'));
+                                });
+
+                                function itemRefresh(active) {
+                                    $('.item').each(function() {
+                                        if($(this).attr('data-order') != active) {
+                                            if($(this).attr('data-status') == 'played') {
+                                                console.log($(this).attr('data-order'));
+                                                $(this).removeClass('active');
+                                                $(this).find(".state").removeClass('playing');
+                                                $(this).find(".state").addClass('completed');
+                                                $(this).find(".state").html('<span>viewed</span>')
+                                            }
+                                        }
+                                    });
+                                }
+                            </script>
                             <!-- Playing -->
                             <li class="item active">
                                 <div class="check">
@@ -258,5 +301,4 @@
                 </div>
             </div>
         </main>
-
 @endsection

@@ -34,7 +34,10 @@ class AuthenticatedSessionController extends Controller
         $request->authenticate();
 
         $request->session()->regenerate();
-
+        if(Auth()->user()->payments()->first() != null)
+        {
+            return redirect(route('videos'));
+        }
         if(strpos($source, 'purchase') != false)
         {
             return redirect()->route('purchase', ['source' => 'purchase']);

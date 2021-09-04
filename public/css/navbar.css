@@ -95,7 +95,7 @@ header.active {
 
 nav.active {
     transform: translate(0px, 0);
-    animation: navanimate 0.5s ease-in;
+    animation: navanimate 0.5s ease-out;
 }
 
 nav.inactive {
