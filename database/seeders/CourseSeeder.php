@@ -19,7 +19,7 @@ class CourseSeeder extends Seeder
             'price' => '199$',
             'image' => 'image',
             'description' => 'Lorem epsom',
-            'difficulty' => 'easy',
+            'difficulty' => 'Easy',
         ]);
     }
 }

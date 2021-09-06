@@ -37,6 +37,10 @@ Route::middleware(['auth', 'student'])->group( function(){
     Route::post('/watched', [VideosController::class, 'watched'])->name('watched');
 });
 
+Route::get('handle-payment', [PaymentController::class, 'paypalhandle'])->name('make.payment');
+Route::get('cancel-payment', [PaymentController::class, 'paypalcancel'])->name('cancel.payment');
+Route::get('payment-success', [PaymentController::class, 'paypalsuccess'])->name('success.payment');
+
 require __DIR__.'/auth.php';
 
 

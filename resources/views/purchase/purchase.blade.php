@@ -196,6 +196,7 @@
                         </div>
                     </form>
                     @endauth
+                    <a href="{{ route('make.payment') }}" class="continue-btn">Pay $224 via Paypal</a>
                 </div>
             </div>
         </main>
@@ -288,7 +289,7 @@
                                 submitButton.classList.remove('wait');
                                 submitButton.classList.add('thanks');
 
-                                submitButton.innerHTML = "Redirecting to Content, Thank you for Choosing the course";
+                                submitButton.innerHTML = "Redirecting to the MW Academy, welcome!";
                                // 
                                 setTimeout(function(){ 
                                    window.location = result.redirect;
