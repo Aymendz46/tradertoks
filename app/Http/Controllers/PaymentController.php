@@ -94,9 +94,9 @@ class PaymentController extends Controller
         $res = $paypalModule->setExpressCheckout($product, true);
 
 
-        return response()->json([
+        /*return response()->json([
             'redirect' => '/videos',
-        ])
+        ])*/
 
         return redirect($res['paypal_link']);
     }
