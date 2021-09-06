@@ -5,7 +5,7 @@
 @endsection
 
 @section('page-script')
-<script src="./js/loading(fast).js"></script>
+<!--script src="./js/loading(fast).js"></script-->
 @auth
 <script src="https://js.stripe.com/v3/"></script>
 <meta name="csrf-token" content="{{ csrf_token() }}">
