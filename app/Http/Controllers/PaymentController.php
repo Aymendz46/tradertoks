@@ -112,11 +112,9 @@ class PaymentController extends Controller
         $response = $paypalModule->getExpressCheckoutDetails($request->token);
   
         if (in_array(strtoupper($response['ACK']), ['SUCCESS', 'SUCCESSWITHWARNING'])) {
-            return response()->json([
-            'redirect' => '/videos',
-        ])->with('successPayment', 'Payment was successfull. The payment success page goes here!');
+            return redirect(route('videos'))->with('successPayment', 'We got the dough! Now what is left is for you to get it, don'/'t slack off');
         }
   
-        dd('Error occured!');
+        return redirect(route('purchase'))->with('failurePayment', 'Payment did not go through, damn. Try again with another way trooper!')
     }
 }

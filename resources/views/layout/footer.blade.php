@@ -14,6 +14,20 @@
     @endif
 </div>
 
+<div>
+    @if(session('successPayment'))
+        <div class="alert alert-success alert-dismissible">
+            <a onclick="closeAlert()" class="close" data-dismiss="alert" aria-label="close">×</a>
+            <div class="alert content">{{ session('successPayment') }}</div>
+        </div>
+    @elseif(session('failurePayment'))  
+        <div class="alert alert-danger alert-dismissible">
+            <a onclick="closeAlert()" class="close" data-dismiss="alert" aria-label="close">×</a>
+            <div class="alert content">{{ session('failurePayment') }}</div>
+        </div>
+    @endif
+</div>
+
 <footer>
     <div class="ft-cont">
         <ul>
