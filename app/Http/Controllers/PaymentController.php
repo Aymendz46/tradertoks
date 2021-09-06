@@ -113,7 +113,9 @@ class PaymentController extends Controller
   
         if (in_array(strtoupper($response['ACK']), ['SUCCESS', 'SUCCESSWITHWARNING'])) 
         {
-            return redirect('/videos')->with('successPayment', 'We got the dough! Now what is left is for you to get it, don'/'t slack off');
+            /*return redirect('/videos')->with('successPayment', 'We got the dough! Now what is left is for you to get it, dont slack off');*/
+            return redirect('/videos')->with('successPayment', 'We got it!');
+
         }
   
         return redirect('purchase')->with('failurePayment', 'Payment did not go through, damn. Try again with another way trooper!');
